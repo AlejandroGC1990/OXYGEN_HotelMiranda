@@ -10,7 +10,7 @@
   background-color: #fff;
   z-index: 5;
   box-shadow: 0px 3px 6px 0px #0000004a;
-
+  
   button {
     background: none;
     border: none;
@@ -18,41 +18,42 @@
     height: 0.8em;
     margin: 0 0 0 1.5em;
   }
-
+  
   &__burger {
     display: block;
   }
-
+  
   &__close {
     display: none;
   }
-
+  
   ul {
     display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
-
+    background-color: #fff;
+    
     li {
+      padding: 0.25em 0;
       display: flex;
       flex-direction: column;
       font-size: 1em;
       font-weight: 600;
       line-height: 2em;
       text-align: left;
-
       a {
         @include archivo-font;
         font-weight: bold;
       }
     }
-
+    
     li:hover {
       color: black;
       font-weight: 700;
     }
   }
-
+  
   .open {
     display: flex;
     flex-direction: column;
@@ -70,6 +71,7 @@
     top: 4.375em;
     width: 100%;
     padding: 1em;
+    z-index: 4;
   }
 
   &.open .nav__burger {

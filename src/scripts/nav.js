@@ -10,14 +10,3 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
     nav.classList.remove("open");
 });
-// open.addEventListener("click", () => {
-//     menu.classList.add("open");
-//     open.classList.add("close");
-//     close.classList.remove("close");
-// });
-
-// close.addEventListener("click", () => {
-//     menu.classList.remove("open");
-//     open.classList.remove("close");
-//     close.classList.add("close");
-// });

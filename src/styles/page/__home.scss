@@ -1,0 +1,44 @@
+@import "../_variables";
+
+body {
+  .header {
+    padding: 9.13em 0 4.5em 1em;
+    width: 375px;
+    top: 114px;
+    background-color: $color_header;
+
+    h4 {
+      @include archivo-font;
+      line-height: 0.9em;
+      font-weight: 600;
+      font-size: 0.813em;
+      color: #fff;
+      letter-spacing: 2.8px;
+    }
+
+    h1 {
+      @include old-standard-tt-regular;
+      font-size: 3.5em;
+      font-weight: 400;
+      color: #fff;
+      padding: 0.6em 0 0.7em;
+    }
+
+    button {
+      padding: 1.6em 5.4em;
+      margin-bottom: 1em;
+      color: #fff;
+      background-color: none;
+    }
+    
+    &__takeTour {
+        background-color: $color_softyBrown;
+        color: #fff;
+    }
+    
+    &__learnMore {
+        background-color: transparent;
+        border-color: #FFFFFF54;
+    }
+  }
+}
