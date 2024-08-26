@@ -105,7 +105,7 @@
 }
 
 body .header {
-  padding: 9.13em 0 4.5em 1em;
+  padding: 9.13em 0 3.4em 0.5em;
   width: 375px;
   top: 114px;
   background-color: #333333;
@@ -124,7 +124,6 @@ body .header h4 {
 }
 body .header h1 {
   font-family: "Old Standard TT", serif;
-  font-weight: 400;
   font-style: normal;
   font-size: 3.5em;
   font-weight: 400;
@@ -132,18 +131,67 @@ body .header h1 {
   padding: 0.6em 0 0.7em;
 }
 body .header button {
-  padding: 1.6em 5.4em;
-  margin-bottom: 1em;
   color: #fff;
   background-color: none;
+  letter-spacing: 0.27em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  padding: 1.6em 3.75em;
+  margin-bottom: 1.8em;
 }
 body .header__takeTour {
+  border: none;
   background-color: #BEAD8E;
   color: #fff;
 }
 body .header__learnMore {
+  border: 0.125em solid rgba(255, 255, 255, 0.3294117647);
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.3294117647);
+}
+body main .reservationCalendar {
+  background: #222222;
+  padding: 2.5em 1.2em;
+}
+body main .reservationCalendar__pack {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+body main .reservationCalendar__pack label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 0 0 0.6em;
+}
+body main .reservationCalendar__pack input {
+  width: 95%;
+  padding: 1em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+}
+body main .reservationCalendar__pack img {
+  position: absolute;
+  width: 15.07px;
+  height: 15px;
+  top: 43.5;
+  margin: 2.6em 0 0;
+}
+body main .reservationCalendar button {
+  color: #fff;
+  background-color: none;
+  letter-spacing: 0.27em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  border: none;
+  background-color: #BEAD8E;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 html, * {
@@ -154,4 +202,6 @@ html, * {
 
 body {
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
 }

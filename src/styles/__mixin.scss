@@ -1,3 +1,5 @@
+//! FONTS
+
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
@@ -9,92 +11,33 @@
   font-variation-settings: "wdth" 100;
 }
 
-@mixin old-standard-tt-regular {
+@mixin old-standard-tt {
   font-family: "Old Standard TT", serif;
-  font-weight: 400;
   font-style: normal;
 }
 
-@mixin old-standard-tt-bold {
+@mixin old-standard-tt-italic {
   font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@mixin old-standard-tt-regular-italic {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
   font-style: italic;
 }
 
-@mixin roboto-thin {
+@mixin roboto {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-@mixin roboto-light {
+@mixin roboto-italic {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@mixin roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@mixin roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@mixin roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@mixin roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-@mixin roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
   font-style: italic;
 }
 
-@mixin roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+//! BUTTOM
 
-@mixin roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-@mixin roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-@mixin roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-@mixin roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+@mixin button {
+  color: #fff;
+  background-color: none;
+  letter-spacing: 0.27em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
 }

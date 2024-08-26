@@ -2,7 +2,7 @@
 
 body {
   .header {
-    padding: 9.13em 0 4.5em 1em;
+    padding: 9.13em 0 3.4em 0.5em;
     width: 375px;
     top: 114px;
     background-color: $color_header;
@@ -17,7 +17,7 @@ body {
     }
 
     h1 {
-      @include old-standard-tt-regular;
+      @include old-standard-tt;
       font-size: 3.5em;
       font-weight: 400;
       color: #fff;
@@ -25,20 +25,67 @@ body {
     }
 
     button {
-      padding: 1.6em 5.4em;
-      margin-bottom: 1em;
-      color: #fff;
-      background-color: none;
+      @include button;
+      padding: 1.6em 3.75em;
+      margin-bottom: 1.8em;
     }
-    
+
     &__takeTour {
-        background-color: $color_softyBrown;
-        color: #fff;
+      border: none;
+      background-color: $color_softyBrown;
+      color: #fff;
     }
-    
+
     &__learnMore {
-        background-color: transparent;
-        border-color: #FFFFFF54;
+      border: 0.125em solid $color_borderButton;
+      background-color: transparent;
+      border-color: #ffffff54;
+    }
+  }
+
+  main {
+    .reservationCalendar {
+      background: $color_black;
+      padding: 2.5em 1.2em;
+
+      &__pack {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2em;
+
+        label {
+          @include roboto;
+          color: #fff;
+          font-weight: 500;
+          font-size: 0.9em;
+          padding: 0 0 0.6em;
+        }
+
+        input {
+          width: 95%;
+          padding: 1em;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid $color_softyBrown;
+        }
+
+        img {
+          position: absolute;
+          width: 15.07px;
+          height: 15px;
+          top: 43.5;
+          margin: 2.6em 0 0;
+        }
+      }
+
+      button {
+        @include button;
+        border: none;
+        background-color: $color_softyBrown;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
     }
   }
 }
