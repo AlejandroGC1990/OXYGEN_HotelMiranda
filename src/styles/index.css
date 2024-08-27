@@ -164,7 +164,11 @@ body main .reservationCalendar button {
   padding-left: 2em;
   padding-right: 2em;
 }
+body main .aboutUs {
+  padding: 0;
+}
 body main .aboutUs__discover {
+  padding: 2.5em 1.2em 0;
   background: #f9f9f9;
   padding-bottom: 11.5em;
   margin-bottom: 45em;
@@ -194,7 +198,7 @@ body main .aboutUs__containerCards {
 body main .aboutUs__containerCards__card {
   z-index: 1;
   width: 17.5em;
-  margin-bottom: 3em;
+  margin-top: 0em;
 }
 body main .aboutUs__containerCards__card__head {
   width: 100%;
@@ -228,7 +232,11 @@ body main .aboutUs__containerCards__card__data2 {
   align-items: center;
   background-color: #222222;
   color: #ffffff;
-  padding: 3em 0 3.5em;
+  padding: 3em 0 3em;
+  margin-bottom: 1.5em;
+}
+body main .aboutUs__containerCards__card__data2 img {
+  width: 2.92em;
 }
 body main .rooms {
   display: flex;
@@ -259,18 +267,61 @@ body main .rooms .swiper .swiper-button-next:after {
 }
 body main .rooms__article {
   background-color: #fff;
-  padding: 0.5em 2em 0;
+  padding: 1.5em 2em 0em;
+  margin-bottom: 6em;
   margin-top: -1em;
   z-index: 1;
+  position: relative;
 }
 body main .rooms__article h3 {
+  line-height: 0.5em;
   font-weight: 400;
   letter-spacing: 0em;
   font-size: 1.75em;
+  padding-bottom: 0.75em;
 }
 body main .rooms__article p {
   text-align: center;
   width: 18em;
+  padding: 0;
+}
+body main .rooms__article img {
+  position: relative;
+  z-index: 2;
+  margin-top: -5em;
+}
+body main .introVideo {
+  background-color: #222222;
+  padding: 4em 1em 2.2em 1em;
+}
+body main .introVideo h4 {
+  color: #BEAD8E;
+  margin-bottom: 1.5em;
+}
+body main .introVideo h2 {
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+body main .introVideo p {
+  color: #C2C2C2;
+  padding: 0.5em;
+}
+body main .introVideo iframe {
+  width: 21em;
+  height: 16.875rem;
+  margin-bottom: 1.5em;
+}
+body main .introVideo button {
+  border: none;
+  background-color: #BEAD8E;
+  padding-left: 4.3em;
+  padding-right: 4.3em;
+}
+body main .facilities {
+  padding-left: 0;
+}
+body main .facilities h4 {
+  text-align: center;
 }
 
 html,
@@ -336,6 +387,6 @@ body header {
   padding: 9.13em 0em 3.7em 1.5em;
   background-color: #333333;
 }
-body main section article {
+body main section {
   padding: 2.5em 1.2em;
 }

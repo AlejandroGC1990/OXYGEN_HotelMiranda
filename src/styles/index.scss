@@ -33,7 +33,7 @@ body {
     margin-bottom: 1.9em;
   }
   h3 {
-    @include old-standard-tt;    
+    @include old-standard-tt;
     font-size: 1.875em;
     font-weight: 400;
     line-height: 1.875em;
@@ -63,11 +63,9 @@ body {
 
   main {
     section {
-      article {
         padding: 2.5em 1.2em;
       }
     }
-  }
 }
 
 @media only screen and (min-width: 1000px) {
