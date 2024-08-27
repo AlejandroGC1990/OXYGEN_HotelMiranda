@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OXYGEN_HotelMiranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/styles/index.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <button class="nav__burger" id="open">
+        <img src="./src/assets/icon_burguer.png" />
+      </button>
+      <button class="nav__close" id="close">
+        <img src="./src/assets/icon_X.png" />
+      </button>
+      <ul class="menu" id="menu">
+        <li><a>About Us</a></li>
+        <li><a>Rooms</a></li>
+        <li><a>Offers</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+      <div class="nav__logo">
+        <div class="nav__logo__H">
+          <img src="./src/assets/icon_logo_H.png" />
+        </div>
+        <img src="./src/assets/img_logo_Hotel Miranda.png" />
+      </div>
+      <div class="nav__containerIcons">
+        <a
+          ><img
+            class="nav__containerIcons__icons"
+            src="./src/assets/icon_user.png"
+        /></a>
+        <a
+          ><img
+            class="nav__containerIcons__icons"
+            src="./src/assets/icon_search.png"
+        /></a>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h4>
+        THE ULTIMATE LUXURY <br />
+        EXPERIENCE
+      </h4>
+      <h2>
+        The Perfect <br />
+        Base For You
+      </h2>
+      <button class="header__takeTour">TAKE A TOUR</button>
+      <button class="header__learnMore">LEARN MORE</button>
+    </header>
+
+    <main>
+      <section class="reservationCalendar">
+        <form>
+          <div class="reservationCalendar__pack">
+            <label for="arrival">Arrival Date</label>
+            <img src="./src/assets/icon_calendar.png" />
+            <input id="arrival" placeholder="Select arrival date" />
+          </div>
+          <div class="reservationCalendar__pack">
+            <label for="departure">LeDeparture Date</label>
+            <img src="./src/assets/icon_calendar.png" />
+            <input id="departure" placeholder="Select departure date" />
+          </div>
+          <button>CHECK AVAILABILITY</button>
+        </form>
+      </section>
+
+      <section class="aboutUs">
+        <article class="aboutUs__discover">
+          <h4>ABOUT US</h4>
+          <h2>
+            Discover Our <br />
+            Underground.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button>BOOK NOW</button>
+        </article>
+        <article class="aboutUs__containerCards">
+          <div class="aboutUs__containerCards__card">
+            <div class="aboutUs__containerCards__card__head">
+              <!-- <img class="aboutUs__containerCards__card__head" src="./src/assets/img_card_home.png"/> -->
+            </div>
+            <div class="aboutUs__containerCards__card__data1">
+              <img src="./src/assets/icon_team_little.png" />
+              <h3>Strong Team</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </div>
+          <div class="aboutUs__containerCards__card">
+            <div class="aboutUs__containerCards__card__head"></div>
+            <div class="aboutUs__containerCards__card__data2">
+              <img src="./src/assets/icon_calendar_arrow.png" />
+              <h3>Luxury Room</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="rooms">
+        <h4>ROOMS</h4>
+        <h2>Hand Picked Rooms</h2>
+        <img src="./src//assets/icon_bar_carousel.png" />
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./src/assets/button_arrow_left.png" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="./src/assets/button_arrow_right.png" />
+          </div>
+        </div>
+        <div class="rooms__article">
+          <h3>Minimal Duplex Room</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <img src="./src/assets/price_night.png" alt="Night price" />
+        </div>
+      </section>
+
+      <section class="introVideo">
+        <h4>INTRO VIDEO</h4>
+        <h2>Meet With Our Luxury Place.</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat you have to understand this.
+        </p>
+        <iframe
+          width="375"
+          height="315"
+          src="https://www.youtube.com/watch?v=Bu3Doe45lcU&autoplay=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >
+        </iframe>
+        <button>BOOK NOW</button>
+      </section>
+
+      <section class="facilities">
+        <h4>FACILITES</h4>
+        <h2>Core Features</h2>
+
+      </section>
+    </main>
+
+    <!-- Swiper slice -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/scripts/slicerSwiper.js"></script>
+    <script src="./src/scripts/nav.js"></script>
+  </body>
+</html>

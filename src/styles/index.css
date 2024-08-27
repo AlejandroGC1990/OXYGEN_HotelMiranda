@@ -1,9 +1,392 @@
-html, * {
+.nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 4.37em;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+}
+.nav button {
+  background: none;
+  border: none;
+  width: 1.25em;
+  height: 0.8em;
+  margin: 0 0 0 1.5em;
+}
+.nav__burger {
+  display: block;
+}
+.nav__close {
+  display: none;
+}
+.nav ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+.nav ul li {
+  padding: 0.25em 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 2em;
+  text-align: left;
+}
+.nav ul li a {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: bold;
+}
+.nav ul li:hover {
+  color: black;
+  font-weight: 700;
+}
+.nav .open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em;
+  z-index: 999;
+}
+.nav .close {
+  display: none;
+}
+.nav .menu {
+  position: absolute;
+  top: 4.375em;
+  width: 100%;
+  padding: 1em;
+  z-index: 4;
+}
+.nav.open .nav__burger {
+  display: none;
+}
+.nav.open .nav__close {
+  display: block;
+}
+.nav.open ul {
+  display: block;
+}
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0 2em;
+}
+.nav__logo__H {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  padding: 0em;
+}
+.nav__logo img {
+  padding: 0.52em 0.77em;
+}
+.nav__containerIcons {
+  display: flex;
+  margin: 0.4em 0 0 6em;
+}
+.nav__containerIcons a {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.nav__containerIcons a__icons {
+  width: 1.5em;
+  height: auto;
+}
+
+body .header h4 {
+  color: #fff;
+}
+body .header h2 {
+  padding-bottom: 0.7em;
+  color: #fff;
+}
+body .header button {
+  padding: 1.6em 3.75em;
+  margin-bottom: 1.8em;
+}
+body .header__takeTour {
+  border: none;
+  background-color: #BEAD8E;
+  color: #fff;
+}
+body .header__learnMore {
+  border: 0.125em solid rgba(255, 255, 255, 0.3294117647);
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.3294117647);
+}
+body main .reservationCalendar {
+  background: #222222;
+  margin-bottom: 3.8em;
+  padding: 2.4em 1em;
+}
+body main .reservationCalendar__pack {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.2em;
+}
+body main .reservationCalendar__pack label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding-bottom: 0.8em;
+}
+body main .reservationCalendar__pack input {
+  width: 25em;
+  padding: 1em 1.7em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+}
+body main .reservationCalendar__pack img {
+  position: absolute;
+  width: 15.07px;
+  height: 1em;
+  margin: 2.4em 0em 0em 0;
+}
+body main .reservationCalendar button {
+  border: none;
+  background-color: #BEAD8E;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+body main .aboutUs {
+  padding: 0;
+}
+body main .aboutUs__discover {
+  padding: 2.5em 1.2em 0;
+  background: #f9f9f9;
+  padding-bottom: 11.5em;
+  margin-bottom: 45em;
+}
+body main .aboutUs__discover h4 {
+  color: #777777;
+}
+body main .aboutUs__discover h2 {
+  padding-bottom: 0.2em;
+}
+body main .aboutUs__discover p {
+  margin-bottom: 1.8em;
+}
+body main .aboutUs__discover button {
+  border: none;
+  background-color: #BEAD8E;
+  padding-left: 4.3em;
+  padding-right: 4.3em;
+}
+body main .aboutUs__containerCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -53em;
+  padding: 0;
+}
+body main .aboutUs__containerCards__card {
+  z-index: 1;
+  width: 17.5em;
+  margin-top: 0em;
+}
+body main .aboutUs__containerCards__card__head {
+  width: 100%;
+  height: 18.5em;
+  background: #e4e4e4;
+  padding: 5.5em;
+}
+body main .aboutUs__containerCards__card img {
+  width: 4.5em;
+  margin-bottom: 1em;
+}
+body main .aboutUs__containerCards__card p {
+  text-align: center;
+  width: 15em;
+}
+body main .aboutUs__containerCards__card__data1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/icon_team_big.png);
+  background-repeat: no-repeat;
+  background-position: 8.55em 2.9em;
+  box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.0196078431);
+  padding: 3em 0 3.5em;
+}
+body main .aboutUs__containerCards__card__data2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 3em 0 3em;
+  margin-bottom: 1.5em;
+}
+body main .aboutUs__containerCards__card__data2 img {
+  width: 2.92em;
+}
+body main .rooms {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+body main .rooms img {
+  margin-bottom: -3em;
+  z-index: 1;
+}
+body main .rooms .swiper {
+  z-index: 0;
+  width: 23.4375em;
+  height: 15.25em;
+}
+body main .rooms .swiper .swiper-slide {
+  background-color: grey;
+}
+body main .rooms .swiper .swiper-button-prev,
+body main .rooms .swiper .swiper-button-next {
+  width: 2em;
+  height: 2em;
+}
+body main .rooms .swiper .swiper-button-prev:after,
+body main .rooms .swiper .swiper-button-next:after {
+  display: none;
+}
+body main .rooms__article {
+  background-color: #fff;
+  padding: 1.5em 2em 0em;
+  margin-bottom: 6em;
+  margin-top: -1em;
+  z-index: 1;
+  position: relative;
+}
+body main .rooms__article h3 {
+  line-height: 0.5em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-size: 1.75em;
+  padding-bottom: 0.75em;
+}
+body main .rooms__article p {
+  text-align: center;
+  width: 18em;
+  padding: 0;
+}
+body main .rooms__article img {
+  position: relative;
+  z-index: 2;
+  margin-top: -5em;
+}
+body main .introVideo {
+  background-color: #222222;
+  padding: 4em 1em 2.2em 1em;
+}
+body main .introVideo h4 {
+  color: #BEAD8E;
+  margin-bottom: 1.5em;
+}
+body main .introVideo h2 {
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+body main .introVideo p {
+  color: #C2C2C2;
+  padding: 0.5em;
+}
+body main .introVideo iframe {
+  width: 21em;
+  height: 16.875rem;
+  margin-bottom: 1.5em;
+}
+body main .introVideo button {
+  border: none;
+  background-color: #BEAD8E;
+  padding-left: 4.3em;
+  padding-right: 4.3em;
+}
+body main .facilities {
+  padding-left: 0;
+}
+body main .facilities h4 {
+  text-align: center;
+}
+
+html,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
+  background-color: #fff;
   min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+body button {
+  color: #fff;
+  background-color: none;
+  letter-spacing: 0.27em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+}
+body h4 {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 0.9em;
+  font-weight: 600;
+  font-size: 0.813em;
+  letter-spacing: 2.8px;
+  margin-bottom: 1.9em;
+}
+body h3 {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 1.875em;
+  letter-spacing: 0.0562em;
+  text-align: left;
+}
+body h2 {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-size: 3.5em;
+  font-weight: 400;
+}
+body p {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+body header {
+  padding: 9.13em 0em 3.7em 1.5em;
+  background-color: #333333;
+}
+body main section {
+  padding: 2.5em 1.2em;
 }

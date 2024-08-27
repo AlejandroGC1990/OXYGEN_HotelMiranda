@@ -1,0 +1,259 @@
+@import "../_variables";
+
+body {
+  .header {
+    h4 {
+      color: #fff;
+    }
+
+    h2 {
+      padding-bottom: 0.7em;
+      color: #fff;
+    }
+
+    button {
+      padding: 1.6em 3.75em;
+      margin-bottom: 1.8em;
+    }
+
+    &__takeTour {
+      border: none;
+      background-color: $color_softyBrown;
+      color: #fff;
+    }
+
+    &__learnMore {
+      border: 0.125em solid $color_borderButton;
+      background-color: transparent;
+      border-color: #ffffff54;
+    }
+  }
+
+  main {
+    .reservationCalendar {
+      background: $color_black;
+      margin-bottom: 3.8em;
+      padding: 2.4em 1em;
+
+      &__pack {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2.2em;
+
+        label {
+          @include roboto;
+          color: #fff;
+          font-weight: 500;
+          font-size: 0.9em;
+          padding-bottom: 0.8em;
+        }
+
+        input {
+          width: 25em;
+          padding: 1em 1.7em;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid $color_softyBrown;
+        }
+
+        img {
+          position: absolute;
+          width: 15.07px;
+          height: 1em;
+          margin: 2.4em 0em 0em 0;
+        }
+      }
+
+      button {
+        @include button__softyBrown;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+    }
+
+    .aboutUs {
+      padding: 0;
+      &__discover {
+        padding: 2.5em 1.2em 0;
+        background: #f9f9f9;
+        padding-bottom: 11.5em;
+        margin-bottom: 45em;
+
+        h4 {
+          color: $color_grey;
+        }
+
+        h2 {
+          padding-bottom: 0.2em;
+        }
+
+        p {
+          margin-bottom: 1.8em;
+        }
+
+        button {
+          @include button__softyBrown;
+          padding-left: 4.3em;
+          padding-right: 4.3em;
+        }
+      }
+
+      &__containerCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -53em;
+        padding: 0;
+
+        &__card {
+          z-index: 1;
+          width: 17.5em;
+          margin-top: 0em;
+          &__head {
+            width: 100%;
+            height: 18.5em;
+            background: #e4e4e4;
+            padding: 5.5em;
+          }
+
+          img {
+            width: 4.5em;
+            margin-bottom: 1em;
+          }
+
+          p {
+            text-align: center;
+            width: 15em;
+          }
+
+          &__data1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../assets/icon_team_big.png);
+            background-repeat: no-repeat;
+            background-position: 8.55em 2.9em;
+            box-shadow: 0px 8px 16px 0px #22222205;
+            padding: 3em 0 3.5em;
+          }
+
+          &__data2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color_black;
+            color: #ffffff;
+            padding: 3em 0 3em;
+            margin-bottom: 1.5em;
+             img {
+              width: 2.92em;
+             }
+          }
+        }
+      }
+    }
+
+    .rooms {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      img {
+        margin-bottom: -3em;
+        z-index: 1;
+      }
+
+      .swiper {
+        z-index: 0;
+        width: 23.4375em;
+        height: 15.25em;
+
+        .swiper-slide {
+          background-color: grey;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 2em;
+          height: 2em;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          display: none;
+        }
+      }
+
+      &__article {
+        background-color: #fff;
+        padding: 1.5em 2em 0em;
+        margin-bottom: 6em;
+        margin-top: -1em;
+        z-index: 1;
+        position: relative;
+
+        h3 {
+          line-height: 0.5em;
+          font-weight: 400;
+          letter-spacing: 0em;
+          font-size: 1.75em;
+          padding-bottom: 0.75em;
+        }
+
+        p {
+          text-align: center;
+          width: 18em;
+          padding: 0;
+        }
+
+        img{
+          position: relative;
+          z-index: 2;
+          margin-top: -5em;
+        }
+      }
+    }
+
+    .introVideo{
+      background-color: $color_black;
+      padding: 4em 01em 2.2em 1em ;
+
+      h4{
+        color: $color_softyBrown;
+        margin-bottom: 1.5em;
+      }
+
+      h2 {
+        color: #fff;
+        margin-bottom: 0.3em;
+      }
+
+      p {
+        color: $color_greyLetter;
+        padding: 0.5em;
+      }
+
+      iframe {
+        width: 21em;
+        height: 16.875rem;
+        margin-bottom: 1.5em
+      }
+
+      button {
+        @include button__softyBrown;
+        padding-left: 4.3em;
+        padding-right: 4.3em;
+      }
+    }
+
+    .facilities {
+      padding-left: 0;
+      h4{
+        text-align: center;
+      }
+    }
+  }
+}
