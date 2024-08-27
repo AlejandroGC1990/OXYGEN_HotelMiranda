@@ -243,6 +243,7 @@ body main .rooms {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-left: 0;
 }
 body main .rooms img {
   margin-bottom: -3em;
@@ -318,10 +319,42 @@ body main .introVideo button {
   padding-right: 4.3em;
 }
 body main .facilities {
-  padding-left: 0;
+  padding-bottom: 10em;
 }
 body main .facilities h4 {
   text-align: center;
+}
+body main .facilities h2 {
+  font-size: 3.4em;
+}
+body main .facilities .swiper {
+  padding-left: 0;
+  z-index: 0;
+  width: 23.4375em;
+  height: 25em;
+}
+body main .facilities .swiper .swiper-slide {
+  display: flex;
+  padding-right: 4em;
+  justify-content: center;
+  align-items: center;
+}
+body main .facilities .swiper .swiper-pagination {
+  height: 2em;
+  width: 15em;
+  background-color: red;
+  bottom: 10px;
+  text-align: center;
+}
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullets {
+  width: 1em;
+  height: 1em;
+  background-color: #ededed;
+  opacity: 1;
+  margin: 0 5px;
+}
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullets-active {
+  background-color: #BEAD8E;
 }
 
 html,

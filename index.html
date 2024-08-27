@@ -100,9 +100,7 @@
         </article>
         <article class="aboutUs__containerCards">
           <div class="aboutUs__containerCards__card">
-            <div class="aboutUs__containerCards__card__head">
-              <!-- <img class="aboutUs__containerCards__card__head" src="./src/assets/img_card_home.png"/> -->
-            </div>
+            <div class="aboutUs__containerCards__card__head"></div>
             <div class="aboutUs__containerCards__card__data1">
               <img src="./src/assets/icon_team_little.png" />
               <h3>Strong Team</h3>
@@ -179,13 +177,37 @@
       <section class="facilities">
         <h4>FACILITES</h4>
         <h2>Core Features</h2>
-
+        <div class="swiper" pagination="true">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities3.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities5.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/assets/img_facilities6.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
     </main>
 
     <!-- Swiper slice -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/scripts/slicerSwiper.js"></script>
+    <script src="./src/scripts/home/slicerSwiperArrow.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    <script src="./src/scripts/home/slicerSwiperPagination.js"></script>
     <script src="./src/scripts/nav.js"></script>
   </body>
 </html>

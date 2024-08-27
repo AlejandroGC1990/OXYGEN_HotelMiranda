@@ -148,9 +148,9 @@ body {
             color: #ffffff;
             padding: 3em 0 3em;
             margin-bottom: 1.5em;
-             img {
+            img {
               width: 2.92em;
-             }
+            }
           }
         }
       }
@@ -161,6 +161,7 @@ body {
       flex-direction: column;
       text-align: center;
       align-items: center;
+      padding-left: 0;
 
       img {
         margin-bottom: -3em;
@@ -175,6 +176,7 @@ body {
         .swiper-slide {
           background-color: grey;
         }
+
         .swiper-button-prev,
         .swiper-button-next {
           width: 2em;
@@ -209,7 +211,7 @@ body {
           padding: 0;
         }
 
-        img{
+        img {
           position: relative;
           z-index: 2;
           margin-top: -5em;
@@ -217,11 +219,11 @@ body {
       }
     }
 
-    .introVideo{
+    .introVideo {
       background-color: $color_black;
-      padding: 4em 01em 2.2em 1em ;
+      padding: 4em 01em 2.2em 1em;
 
-      h4{
+      h4 {
         color: $color_softyBrown;
         margin-bottom: 1.5em;
       }
@@ -239,7 +241,7 @@ body {
       iframe {
         width: 21em;
         height: 16.875rem;
-        margin-bottom: 1.5em
+        margin-bottom: 1.5em;
       }
 
       button {
@@ -250,9 +252,48 @@ body {
     }
 
     .facilities {
-      padding-left: 0;
-      h4{
+      padding-bottom: 10em;
+
+      h4 {
         text-align: center;
+      }
+
+      h2 {
+        font-size: 3.4em;
+      }
+
+      .swiper {
+        padding-left: 0;
+        z-index: 0;
+        width: 23.4375em;
+        height: 25em;
+
+        .swiper-slide {
+          display: flex;
+          padding-right: 4em;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .swiper-pagination {
+          height: 2em;
+          width: 15em;
+          background-color: red;
+          bottom: 10px;
+          text-align: center;
+
+          .swiper-pagination-bullets {
+            width: 1em;
+            height: 1em;
+            background-color: #ededed;
+            opacity: 1;
+            margin: 0 5px;
+          }
+
+          .swiper-pagination-bullets-active {
+            background-color: $color_softyBrown;
+          }
+        }
       }
     }
   }
