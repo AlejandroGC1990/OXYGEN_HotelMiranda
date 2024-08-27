@@ -1,7 +1,7 @@
 //! FONTS
 
 // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+// <weibuttonvalue from 100 to 900
 
 @mixin archivo-font {
   font-family: "Archivo", sans-serif;
@@ -34,10 +34,7 @@
 
 //! BUTTOM
 
-@mixin button {
-  color: #fff;
-  background-color: none;
-  letter-spacing: 0.27em;
-  padding-top: 1.6em;
-  padding-bottom: 1.6em;
+@mixin button__softyBrown {
+  border: none;
+  background-color: $color_softyBrown;
 }

@@ -3,17 +3,72 @@
 @import "./components/_nav";
 @import "./page/_home";
 
-html, * { 
-    box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body { 
-    background-color: #fff;
-    min-width: 320px; 
-    display: flex;
-    flex-direction: column;
+body {
+  background-color: #fff;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    color: #fff;
+    background-color: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+  }
+
+  h4 {
+    @include archivo-font;
+    line-height: 0.9em;
+    font-weight: 600;
+    font-size: 0.813em;
+    letter-spacing: 2.8px;
+    margin-bottom: 1.9em;
+  }
+  h3 {
+    @include old-standard-tt;    
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.875em;
+    letter-spacing: 0.0562em;
+    text-align: left;
+  }
+
+  h2 {
+    @include old-standard-tt;
+    font-size: 3.5em;
+    font-weight: 400;
+  }
+
+  p {
+    @include archivo-font;
+    font-family: Archivo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  header {
+    padding: 9.13em 0em 3.7em 1.5em;
+    background-color: $color_header;
+  }
+
+  main {
+    section {
+      article {
+        padding: 2.5em 1.2em;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 1000px) {}
+@media only screen and (min-width: 1000px) {
+}

@@ -53,10 +53,10 @@
         THE ULTIMATE LUXURY <br />
         EXPERIENCE
       </h4>
-      <h1>
+      <h2>
         The Perfect <br />
         Base For You
-      </h1>
+      </h2>
       <button class="header__takeTour">TAKE A TOUR</button>
       <button class="header__learnMore">LEARN MORE</button>
     </header>
@@ -67,24 +67,24 @@
           <div class="reservationCalendar__pack">
             <label for="arrival">Arrival Date</label>
             <img src="./src/assets/icon_calendar.png" />
-            <input placeholder="" />
+            <input id="arrival" placeholder="Select arrival date" />
           </div>
           <div class="reservationCalendar__pack">
-            <label for="arrival">LeDeparture Date</label>
+            <label for="departure">LeDeparture Date</label>
             <img src="./src/assets/icon_calendar.png" />
-            <input />
+            <input id="departure" placeholder="Select departure date" />
           </div>
           <button>CHECK AVAILABILITY</button>
         </form>
       </section>
 
       <section class="aboutUs">
-        <div>
+        <article class="aboutUs__discover">
           <h4>ABOUT US</h4>
-          <h1>
+          <h2>
             Discover Our <br />
-            Underground
-          </h1>
+            Underground.
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -92,25 +92,35 @@
             aliquip ex ea commodo consequat.
           </p>
           <button>BOOK NOW</button>
-        </div>
-        <div class="card">
-          <img />
-          <div>
-            <img src=""/>
-            <img src=""/>
-            <h3>Strong Team</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </article>
+        <article class="aboutUs__containerCards">
+          <div class="aboutUs__containerCards__card">
+            <div class="aboutUs__containerCards__card__head">
+              <!-- <img class="aboutUs__containerCards__card__head" src="./src/assets/img_card_home.png"/> -->
+            </div>
+            <div class="aboutUs__containerCards__card__data1">
+              <img src="./src/assets/icon_team_little.png" />
+              <h3>Strong Team</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img />
-          <div>
-            <img src=""/>
-            <img src=""/>
-            <h3>Luxury Room</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          <div class="aboutUs__containerCards__card">
+            <div class="aboutUs__containerCards__card__head">
+              <!-- <img class="aboutUs__containerCards__card__head" src="./src/assets/img_card_home.png"/> -->
+            </div>
+            <div class="aboutUs__containerCards__card__data2">
+              <img src="./src/assets/icon_calendar_arrow.png" />
+              <h3>Luxury Room</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor.
+              </p>
+            </div>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
