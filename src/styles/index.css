@@ -227,8 +227,50 @@ body main .aboutUs__containerCards__card__data2 {
   flex-direction: column;
   align-items: center;
   background-color: #222222;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 3em 0 3.5em;
+}
+body main .rooms {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+body main .rooms img {
+  margin-bottom: -3em;
+  z-index: 1;
+}
+body main .rooms .swiper {
+  z-index: 0;
+  width: 23.4375em;
+  height: 15.25em;
+}
+body main .rooms .swiper .swiper-slide {
+  background-color: grey;
+}
+body main .rooms .swiper .swiper-button-prev,
+body main .rooms .swiper .swiper-button-next {
+  width: 2em;
+  height: 2em;
+}
+body main .rooms .swiper .swiper-button-prev:after,
+body main .rooms .swiper .swiper-button-next:after {
+  display: none;
+}
+body main .rooms__article {
+  background-color: #fff;
+  padding: 0.5em 2em 0;
+  margin-top: -1em;
+  z-index: 1;
+}
+body main .rooms__article h3 {
+  font-weight: 400;
+  letter-spacing: 0em;
+  font-size: 1.75em;
+}
+body main .rooms__article p {
+  text-align: center;
+  width: 18em;
 }
 
 html,
