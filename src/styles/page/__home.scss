@@ -362,7 +362,7 @@ body {
         width: 20em;
         display: flex;
         flex-direction: column;
-        
+
         &__container {
           width: 100%;
 
@@ -414,6 +414,10 @@ body {
         .swiper-button-next:after {
           display: none;
         }
+      }
+
+      .swiperMenu2{
+        background-color: greenyellow;
       }
     }
   }

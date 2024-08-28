@@ -459,6 +459,9 @@ body main .menu .swiperMenu .swiper-button-prev:after,
 body main .menu .swiperMenu .swiper-button-next:after {
   display: none;
 }
+body main .menu .swiperMenu2 {
+  background-color: greenyellow;
+}
 
 html,
 * {
