@@ -255,22 +255,22 @@ body main .rooms img {
   margin-bottom: -3em;
   z-index: 1;
 }
-body main .rooms .swiper {
+body main .rooms .swiperRooms {
   z-index: 0;
   width: 23.4375em;
   height: 15.25em;
   overflow: hidden;
 }
-body main .rooms .swiper .swiper-slide {
+body main .rooms .swiperRooms .swiper-slide {
   background-color: grey;
 }
-body main .rooms .swiper .swiper-button-prev,
-body main .rooms .swiper .swiper-button-next {
+body main .rooms .swiperRooms .swiper-button-prev,
+body main .rooms .swiperRooms .swiper-button-next {
   width: 2em;
   height: 2em;
 }
-body main .rooms .swiper .swiper-button-prev:after,
-body main .rooms .swiper .swiper-button-next:after {
+body main .rooms .swiperRooms .swiper-button-prev:after,
+body main .rooms .swiperRooms .swiper-button-next:after {
   display: none;
 }
 body main .rooms__article {
@@ -326,7 +326,7 @@ body main .introVideo button {
   padding-right: 4.3em;
 }
 body main .facilities {
-  padding-bottom: 10em;
+  padding-bottom: 3.5em;
   padding-left: 0;
 }
 body main .facilities h4 {
@@ -353,7 +353,7 @@ body main .facilities .swiper .swiper-slide {
 }
 body main .facilities .swiper .swiper-slide__containerImg {
   padding: 4em 0;
-  margin: 1em 0 2.5em 0;
+  margin: 1em 0 2em 0;
   width: 100%;
   position: relative;
 }
@@ -398,6 +398,66 @@ body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet {
 body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
   opacity: 1;
+}
+body main .menu {
+  background-image: url(../assets/icon_menu.png);
+  background-repeat: no-repeat;
+  background-position: 17.9em 0em;
+  background-size: 7.1563em;
+  padding-top: 7.5em;
+  padding-bottom: 10em;
+}
+body main .menu h2 {
+  margin-bottom: 0.2em;
+}
+body main .menu .swiperMenu {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+}
+body main .menu .swiperMenu__container {
+  width: 100%;
+}
+body main .menu .swiperMenu__container__article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main .menu .swiperMenu__container__article__pack {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  align-items: center;
+}
+body main .menu .swiperMenu__container__article__pack__text {
+  flex-direction: column;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+body main .menu .swiperMenu__container__article__pack__text h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+body main .menu .swiperMenu__container__article__pack__text p {
+  font-size: 0.875em;
+  width: 13em;
+}
+body main .menu .swiperMenu__containerButtons {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 1em 2.5em 5em;
+  align-self: flex-end;
+}
+body main .menu .swiperMenu__containerButtons .swiper-button-prev,
+body main .menu .swiperMenu__containerButtons .swiper-button-next {
+  width: 1em;
+  height: 1em;
+}
+body main .menu .swiperMenu .swiper-button-prev:after,
+body main .menu .swiperMenu .swiper-button-next:after {
+  display: none;
 }
 
 html,

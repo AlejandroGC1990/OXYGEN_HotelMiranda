@@ -1,4 +1,4 @@
-const swiperArrow = new Swiper(".swiper", {
+const swiperArrowMenu = new Swiper(".swiperMenu", {
   direction: "horizontal",
   loop: true,
   navigation: {

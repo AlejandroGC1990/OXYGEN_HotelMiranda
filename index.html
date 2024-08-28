@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./src/styles/index.css" />
   </head>
 
@@ -129,7 +132,7 @@
         <h2>Hand Picked Rooms</h2>
         <img src="./src//assets/icon_bar_carousel.png" />
 
-        <div class="swiper">
+        <div class="swiper swiperRooms">
           <div class="swiper-wrapper">
             <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
@@ -180,8 +183,7 @@
 
         <div class="swiper" pagination="true">
           <div class="swiper-wrapper">
-
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -199,7 +201,7 @@
               </p>
             </div>
 
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -217,7 +219,7 @@
               </p>
             </div>
 
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -235,7 +237,7 @@
               </p>
             </div>
 
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -253,7 +255,7 @@
               </p>
             </div>
 
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -271,7 +273,7 @@
               </p>
             </div>
 
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <div class="swiper-slide__containerImg">
                 <img
                   class="swiper-slide__containerImg__featuresIcon"
@@ -289,13 +291,94 @@
               </p>
             </div>
           </div>
-          
+
           <div class="swiper-pagination --custom"></div>
-          
         </div>
       </section>
 
       <section class="menu">
+        <h4>MENU</h4>
+        <h2>Our Foods Menu</h2>
+
+        <div class="swiper swiperMenu">
+          <div class="swiper-wrapper swiperMenu__container">
+            <article class="swiper-slide swiperMenu__container__article">
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Eggs & Bacon</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Tea or Coffee</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Chia Oatmeal</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide swiperMenu__container__article">
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Fruit Parfait</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Marmalade Selection</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div class="swiperMenu__container__article__pack">
+                <img src="./src/assets/RectangleGrey_menuFood_swiper.png" />
+                <div class="swiperMenu__container__article__pack__text">
+                  <h3>Cheese Plate</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                    sed do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="swiperMenu__containerButtons">
+            <div class="swiper-button-prev">
+              <img src="./src/assets/button_arrow_left.png" />
+            </div>
+          
+            <div class="swiper-button-next">
+              <img src="./src/assets/button_arrow_right.png" />
+            </div>
+          </div>
+        </div>
 
         
       </section>
@@ -304,7 +387,8 @@
     <!-- Swiper slice -->
     <script src="./src/scripts/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/scripts/home/slicerSwiperArrow.js"></script>
+    <script src="./src/scripts/home/slicerSwiperArrowRooms.js"></script>
     <script src="./src/scripts/home/slicerSwiperPagination.js"></script>
+    <script src="./src/scripts/home/slicerSwiperArrowMenu.js"></script>
   </body>
 </html>
