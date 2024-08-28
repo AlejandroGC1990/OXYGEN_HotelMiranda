@@ -1,34 +1,94 @@
 .nav {
   display: flex;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
   position: fixed;
-  height: 4.37em;
-  width: 100%;
+  width: 23.4375em;
+  top: 0em;
   background-color: #fff;
   z-index: 5;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
 }
-.nav button {
+.nav__container {
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2901960784);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4.37em;
+  background-color: #fff;
+  z-index: 5;
+}
+.nav__container button {
   background: none;
   border: none;
   width: 1.25em;
   height: 0.8em;
-  margin: 0 0 0 1.5em;
+  cursor: pointer;
 }
-.nav__burger {
-  display: block;
+.nav__container__burger {
+  padding: 0;
 }
-.nav__close {
+.nav__container__close {
   display: none;
 }
-.nav ul {
+.nav__container__burger.close {
+  display: none;
+}
+.nav__container__close.open {
+  padding: 0;
+  display: block;
+}
+.nav__container__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0 0 2em;
+}
+.nav__container__logo__H {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  padding: 0em;
+}
+.nav__container__logo img {
+  padding: 0.52em 0.77em;
+}
+.nav__container__containerIcons {
+  display: flex;
+  margin: 0.4em 0 0 5em;
+}
+.nav__container__containerIcons a {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5em;
+}
+.nav__container__containerIcons a__icons {
+  width: 1.5em;
+  height: auto;
+}
+.nav__containerUl ul.menu.open {
+  display: block;
+}
+.nav__containerUl .menu {
+  background-color: #fff;
+  padding-top: 0.5em;
+  position: absolute;
+  top: 4.4em;
+  padding: 1em;
+  z-index: 0;
+  width: 23.4375em;
+}
+.nav__containerUl ul {
+  z-index: 0;
   display: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #fff;
 }
-.nav ul li {
+.nav__containerUl ul li {
+  z-index: 0;
   padding: 0.25em 0;
   display: flex;
   flex-direction: column;
@@ -37,7 +97,7 @@
   line-height: 2em;
   text-align: left;
 }
-.nav ul li a {
+.nav__containerUl ul li a {
   font-family: "Archivo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -45,63 +105,9 @@
   font-variation-settings: "wdth" 100;
   font-weight: bold;
 }
-.nav ul li:hover {
+.nav__containerUl ul li:hover {
   color: black;
   font-weight: 700;
-}
-.nav .open {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1em;
-  z-index: 999;
-}
-.nav .close {
-  display: none;
-}
-.nav .menu {
-  position: absolute;
-  top: 4.375em;
-  width: 100%;
-  padding: 1em;
-  z-index: 4;
-}
-.nav.open .nav__burger {
-  display: none;
-}
-.nav.open .nav__close {
-  display: block;
-}
-.nav.open ul {
-  display: block;
-}
-.nav__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5em 0 0 2em;
-}
-.nav__logo__H {
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
-  padding: 0em;
-}
-.nav__logo img {
-  padding: 0.52em 0.77em;
-}
-.nav__containerIcons {
-  display: flex;
-  margin: 0.4em 0 0 6em;
-}
-.nav__containerIcons a {
-  display: flex;
-  align-items: center;
-  padding: 0 0.5em;
-}
-.nav__containerIcons a__icons {
-  width: 1.5em;
-  height: auto;
 }
 
 body .header h4 {
@@ -243,26 +249,28 @@ body main .rooms {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-left: 0;
 }
 body main .rooms img {
   margin-bottom: -3em;
   z-index: 1;
 }
-body main .rooms .swiper {
+body main .rooms .swiperRooms {
   z-index: 0;
   width: 23.4375em;
   height: 15.25em;
+  overflow: hidden;
 }
-body main .rooms .swiper .swiper-slide {
+body main .rooms .swiperRooms .swiper-slide {
   background-color: grey;
 }
-body main .rooms .swiper .swiper-button-prev,
-body main .rooms .swiper .swiper-button-next {
+body main .rooms .swiperRooms .swiper-button-prev,
+body main .rooms .swiperRooms .swiper-button-next {
   width: 2em;
   height: 2em;
 }
-body main .rooms .swiper .swiper-button-prev:after,
-body main .rooms .swiper .swiper-button-next:after {
+body main .rooms .swiperRooms .swiper-button-prev:after,
+body main .rooms .swiperRooms .swiper-button-next:after {
   display: none;
 }
 body main .rooms__article {
@@ -308,7 +316,7 @@ body main .introVideo p {
 }
 body main .introVideo iframe {
   width: 21em;
-  height: 16.875rem;
+  height: 16.875em;
   margin-bottom: 1.5em;
 }
 body main .introVideo button {
@@ -318,10 +326,173 @@ body main .introVideo button {
   padding-right: 4.3em;
 }
 body main .facilities {
+  padding-bottom: 3.5em;
   padding-left: 0;
 }
 body main .facilities h4 {
+  margin-top: 1.9em;
   text-align: center;
+}
+body main .facilities h2 {
+  font-size: 3.4em;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+body main .facilities .swiper {
+  width: 23.4375em;
+  height: 23.125em;
+}
+body main .facilities .swiper .swiper-slide {
+  width: 100%;
+  display: flex;
+  top: 0;
+  padding: 0 2.5em 0 1.5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body main .facilities .swiper .swiper-slide__containerImg {
+  padding: 4em 0;
+  margin: 1em 0 2em 0;
+  width: 100%;
+  position: relative;
+}
+body main .facilities .swiper .swiper-slide__containerImg__featuresIcon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body main .facilities .swiper .swiper-slide__containerImg__featuresNum {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body main .facilities .swiper .swiper-slide h3 {
+  letter-spacing: 0;
+}
+body main .facilities .swiper .swiper-slide p {
+  padding-left: 0.35em;
+  width: 19em;
+  line-height: 1.5em;
+  margin: 0.75em 0 1.5em;
+}
+body main .facilities .swiper .swiper-pagination {
+  height: 2em;
+  width: 10em;
+  bottom: 0em;
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 1em;
+  height: 1em;
+  background-color: #ededed;
+  opacity: 1;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
+  opacity: 1;
+}
+body main .menu {
+  background-image: url(../assets/icon_menu.png);
+  background-repeat: no-repeat;
+  background-position: 17.9em 0em;
+  background-size: 7.1563em;
+  padding-top: 7.5em;
+  padding-bottom: 10em;
+}
+body main .menu h2 {
+  margin-bottom: 0.2em;
+}
+body main .menu .swiperMenu {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+}
+body main .menu .swiperMenu__container {
+  width: 100%;
+}
+body main .menu .swiperMenu__container__article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body main .menu .swiperMenu__container__article__pack {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  align-items: center;
+}
+body main .menu .swiperMenu__container__article__pack__text {
+  flex-direction: column;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+body main .menu .swiperMenu__container__article__pack__text h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+body main .menu .swiperMenu__container__article__pack__text p {
+  font-size: 0.875em;
+  width: 13em;
+}
+body main .menu .swiperMenu__containerButtons {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 1em 2.5em 5em;
+  align-self: flex-end;
+}
+body main .menu .swiperMenu__containerButtons .swiper-button-prev,
+body main .menu .swiperMenu__containerButtons .swiper-button-next {
+  width: 1em;
+  height: 1em;
+}
+body main .menu .swiperMenu .swiper-button-prev:after,
+body main .menu .swiperMenu .swiper-button-next:after {
+  display: none;
+}
+body main .menu .swiperMenu2 {
+  background-color: greenyellow;
+}
+body main .benefits {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+body main .benefits__pack {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+}
+body main .benefits__pack img {
+  margin-bottom: 3em;
+  width: 4.875em;
+  height: 5em;
+}
+body main .benefits__pack p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+}
+body main .benefits__pack p span {
+  font-size: 3.75em;
+  font-weight: 700;
 }
 
 html,
@@ -332,7 +503,11 @@ html,
 }
 
 body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
   background-color: #fff;
+  width: 375px;
   min-width: 320px;
   display: flex;
   flex-direction: column;

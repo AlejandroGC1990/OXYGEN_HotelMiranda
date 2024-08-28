@@ -1,12 +1,15 @@
-const menu = document.querySelector("#menu");
-const open = document.querySelector("#open");
-const close = document.querySelector("#close");
-const nav = document.querySelector(".nav");
+const subnav = document.getElementById("subnav");
+const open = document.getElementById("open");
+const close = document.getElementById("close");
 
 open.addEventListener("click", () => {
-    nav.classList.add("open");
+    open.classList.add("close");
+    close.classList.add("open");
+    subnav.classList.add("open");
 });
 
 close.addEventListener("click", () => {
-    nav.classList.remove("open");
+    subnav.classList.remove("open");
+    close.classList.remove("open");
+    open.classList.remove("close");
 });

@@ -1,4 +1,5 @@
 @import "../_variables";
+// @import "../components/_swiper";
 
 body {
   .header {
@@ -148,9 +149,9 @@ body {
             color: #ffffff;
             padding: 3em 0 3em;
             margin-bottom: 1.5em;
-             img {
+            img {
               width: 2.92em;
-             }
+            }
           }
         }
       }
@@ -161,20 +162,23 @@ body {
       flex-direction: column;
       text-align: center;
       align-items: center;
+      padding-left: 0;
 
       img {
         margin-bottom: -3em;
         z-index: 1;
       }
 
-      .swiper {
+      .swiperRooms {
         z-index: 0;
         width: 23.4375em;
         height: 15.25em;
+        overflow: hidden;
 
         .swiper-slide {
           background-color: grey;
         }
+
         .swiper-button-prev,
         .swiper-button-next {
           width: 2em;
@@ -209,7 +213,7 @@ body {
           padding: 0;
         }
 
-        img{
+        img {
           position: relative;
           z-index: 2;
           margin-top: -5em;
@@ -217,11 +221,11 @@ body {
       }
     }
 
-    .introVideo{
+    .introVideo {
       background-color: $color_black;
-      padding: 4em 01em 2.2em 1em ;
+      padding: 4em 01em 2.2em 1em;
 
-      h4{
+      h4 {
         color: $color_softyBrown;
         margin-bottom: 1.5em;
       }
@@ -238,8 +242,8 @@ body {
 
       iframe {
         width: 21em;
-        height: 16.875rem;
-        margin-bottom: 1.5em
+        height: 16.875em;
+        margin-bottom: 1.5em;
       }
 
       button {
@@ -250,9 +254,204 @@ body {
     }
 
     .facilities {
+      padding-bottom: 3.5em;
       padding-left: 0;
-      h4{
+
+      h4 {
+        margin-top: 1.9em;
         text-align: center;
+      }
+
+      h2 {
+        font-size: 3.4em;
+        text-align: center;
+        margin-bottom: 0.4em;
+      }
+
+      .swiper {
+        width: 23.4375em;
+        height: 23.125em;
+        // overflow: hidden;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        // position: relative;
+
+        .swiper-slide {
+          width: 100%;
+          display: flex;
+          top: 0;
+          padding: 0 2.5em 0 1.5em;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          &__containerImg {
+            padding: 4em 0;
+            margin: 1em 0 2em 0;
+            width: 100%;
+            position: relative;
+
+            &__featuresIcon {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+
+            &__featuresNum {
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+
+          h3 {
+            letter-spacing: 0;
+          }
+
+          p {
+            padding-left: 0.35em;
+            width: 19em;
+            line-height: 1.5em;
+            margin: 0.75em 0 1.5em;
+          }
+        }
+
+        .swiper-pagination {
+          height: 2em;
+          width: 10em;
+          bottom: 0em;
+          text-align: center;
+          z-index: 10;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .swiper-pagination-bullet {
+            width: 1em;
+            height: 1em;
+            background-color: #ededed;
+            opacity: 1;
+            margin: 0 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+          }
+
+          .swiper-pagination-bullet-active {
+            background-color: $color_softyBrown;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .menu {
+      background-image: url(../assets/icon_menu.png);
+      background-repeat: no-repeat;
+      background-position: 17.9em 0em;
+      background-size: 7.1563em;
+      padding-top: 7.5em;
+      padding-bottom: 10em;
+
+      h2 {
+        margin-bottom: 0.2em;
+      }
+
+      .swiperMenu {
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+
+        &__container {
+          width: 100%;
+
+          &__article {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &__pack {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 1em;
+              align-items: center;
+
+              &__text {
+                flex-direction: column;
+                padding-left: 1.5em;
+                padding-bottom: 0.5em;
+                h3 {
+                  font-size: 1.5em;
+                  line-height: 1em;
+                }
+                p {
+                  font-size: 0.875em;
+                  width: 13em;
+                }
+              }
+            }
+          }
+        }
+
+        &__containerButtons {
+          display: flex;
+          position: relative;
+          flex-direction: row;
+          padding: 1em 2.5em 5em;
+          align-self: flex-end;
+
+          .swiper-button-prev,
+          .swiper-button-next {
+            width: 1em;
+            height: 1em;
+          }
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          display: none;
+        }
+      }
+
+      .swiperMenu2 {
+        background-color: greenyellow;
+      }
+    }
+
+    .benefits {
+      background-color: #222222;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+
+      &__pack {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.5em;
+
+        img{
+          margin-bottom: 3em;
+          width: 4.875em;
+          height: 5em;
+        }
+
+        p {
+          @include roboto;
+          color: #fff;
+          text-align: center;
+          font-size: 1em;
+          font-weight: 300;
+
+          span{
+            font-size: 3.75em;
+            font-weight: 700;
+          }
+        }
       }
     }
   }
