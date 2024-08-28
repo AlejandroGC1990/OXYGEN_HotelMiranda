@@ -462,6 +462,38 @@ body main .menu .swiperMenu .swiper-button-next:after {
 body main .menu .swiperMenu2 {
   background-color: greenyellow;
 }
+body main .benefits {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+body main .benefits__pack {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.5em;
+}
+body main .benefits__pack img {
+  margin-bottom: 3em;
+  width: 4.875em;
+  height: 5em;
+}
+body main .benefits__pack p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+}
+body main .benefits__pack p span {
+  font-size: 3.75em;
+  font-weight: 700;
+}
 
 html,
 * {
