@@ -1,4 +1,5 @@
 @import "../_variables";
+// @import "../components/_swiper";
 
 body {
   .header {
@@ -172,6 +173,7 @@ body {
         z-index: 0;
         width: 23.4375em;
         height: 15.25em;
+        overflow: hidden;
 
         .swiper-slide {
           background-color: grey;
@@ -240,7 +242,7 @@ body {
 
       iframe {
         width: 21em;
-        height: 16.875rem;
+        height: 16.875em;
         margin-bottom: 1.5em;
       }
 
@@ -253,47 +255,95 @@ body {
 
     .facilities {
       padding-bottom: 10em;
+      padding-left: 0;
 
       h4 {
+        margin-top: 1.9em;
         text-align: center;
       }
 
       h2 {
         font-size: 3.4em;
+        text-align: center;
+        margin-bottom: 0.4em;
       }
 
       .swiper {
-        padding-left: 0;
-        z-index: 0;
         width: 23.4375em;
-        height: 25em;
+        height: 23.125em;
+        // overflow: hidden;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        // position: relative;
 
         .swiper-slide {
+          width: 100%;
           display: flex;
-          padding-right: 4em;
-          justify-content: center;
-          align-items: center;
+          top: 0;
+          padding: 0 2.5em 0 1.5em;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          &__containerImg {
+            padding: 4em 0;
+            margin: 1em 0 2.5em 0;
+            width: 100%;
+            position: relative;
+
+            &__featuresIcon {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+
+            &__featuresNum {
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+
+          h3 {
+            letter-spacing: 0;
+          }
+
+          p {
+            padding-left: 0.35em;
+            width: 19em;
+            line-height: 1.5em;
+            margin: 0.75em 0 1.5em;
+          }
         }
 
         .swiper-pagination {
           height: 2em;
-          width: 15em;
-          background-color: red;
-          bottom: 10px;
+          width: 10em;
+          bottom: 0em;
           text-align: center;
+          z-index: 10;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
 
-          .swiper-pagination-bullets {
+          .swiper-pagination-bullet {
             width: 1em;
             height: 1em;
             background-color: #ededed;
             opacity: 1;
             margin: 0 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
           }
 
-          .swiper-pagination-bullets-active {
+          .swiper-pagination-bullet-active {
             background-color: $color_softyBrown;
+            opacity: 1;
           }
         }
+      
       }
     }
   }

@@ -2,9 +2,11 @@
 
 .nav {
   display: flex;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
   position: fixed;
-  width: 100%;
+  width: 23.4375em;
   top: 0em;
   background-color: #fff;
   z-index: 5;
@@ -66,7 +68,7 @@
 
     &__containerIcons {
       display: flex;
-      margin: 0.4em 0 0 6em;
+      margin: 0.4em 0 0 5em;
 
       a {
         display: flex;
@@ -85,23 +87,24 @@
     ul.menu.open {
       display: block;
     }
-
+    
     .menu {
       background-color: #fff;
       padding-top: 0.5em;
       position: absolute;
       top: 4.4em;
-      width: 100%;
       padding: 1em;
       z-index: 0;
+      width: 23.4375em;
     }
+
     ul {
       z-index: 0;
       display: none;
       list-style-type: none;
       padding: 0;
       margin: 0;
-
+      
       li {
         z-index: 0;
         padding: 0.25em 0;
@@ -111,19 +114,19 @@
         font-weight: 600;
         line-height: 2em;
         text-align: left;
-
+        
         a {
           @include archivo-font;
           font-weight: bold;
         }
       }
-
+      
       li:hover {
         color: black;
         font-weight: 700;
       }
     }
   }
-
- 
+  
+  
 }

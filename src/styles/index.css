@@ -1,8 +1,10 @@
 .nav {
   display: flex;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
   position: fixed;
-  width: 100%;
+  width: 23.4375em;
   top: 0em;
   background-color: #fff;
   z-index: 5;
@@ -55,7 +57,7 @@
 }
 .nav__container__containerIcons {
   display: flex;
-  margin: 0.4em 0 0 6em;
+  margin: 0.4em 0 0 5em;
 }
 .nav__container__containerIcons a {
   display: flex;
@@ -74,9 +76,9 @@
   padding-top: 0.5em;
   position: absolute;
   top: 4.4em;
-  width: 100%;
   padding: 1em;
   z-index: 0;
+  width: 23.4375em;
 }
 .nav__containerUl ul {
   z-index: 0;
@@ -257,6 +259,7 @@ body main .rooms .swiper {
   z-index: 0;
   width: 23.4375em;
   height: 15.25em;
+  overflow: hidden;
 }
 body main .rooms .swiper .swiper-slide {
   background-color: grey;
@@ -313,7 +316,7 @@ body main .introVideo p {
 }
 body main .introVideo iframe {
   width: 21em;
-  height: 16.875rem;
+  height: 16.875em;
   margin-bottom: 1.5em;
 }
 body main .introVideo button {
@@ -324,41 +327,77 @@ body main .introVideo button {
 }
 body main .facilities {
   padding-bottom: 10em;
+  padding-left: 0;
 }
 body main .facilities h4 {
+  margin-top: 1.9em;
   text-align: center;
 }
 body main .facilities h2 {
   font-size: 3.4em;
+  text-align: center;
+  margin-bottom: 0.4em;
 }
 body main .facilities .swiper {
-  padding-left: 0;
-  z-index: 0;
   width: 23.4375em;
-  height: 25em;
+  height: 23.125em;
 }
 body main .facilities .swiper .swiper-slide {
+  width: 100%;
   display: flex;
-  padding-right: 4em;
-  justify-content: center;
-  align-items: center;
+  top: 0;
+  padding: 0 2.5em 0 1.5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body main .facilities .swiper .swiper-slide__containerImg {
+  padding: 4em 0;
+  margin: 1em 0 2.5em 0;
+  width: 100%;
+  position: relative;
+}
+body main .facilities .swiper .swiper-slide__containerImg__featuresIcon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body main .facilities .swiper .swiper-slide__containerImg__featuresNum {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body main .facilities .swiper .swiper-slide h3 {
+  letter-spacing: 0;
+}
+body main .facilities .swiper .swiper-slide p {
+  padding-left: 0.35em;
+  width: 19em;
+  line-height: 1.5em;
+  margin: 0.75em 0 1.5em;
 }
 body main .facilities .swiper .swiper-pagination {
   height: 2em;
-  width: 15em;
-  background-color: red;
-  bottom: 10px;
+  width: 10em;
+  bottom: 0em;
   text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-body main .facilities .swiper .swiper-pagination .swiper-pagination-bullets {
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 1em;
   height: 1em;
   background-color: #ededed;
   opacity: 1;
   margin: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
-body main .facilities .swiper .swiper-pagination .swiper-pagination-bullets-active {
+body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
+  opacity: 1;
 }
 
 html,
@@ -369,7 +408,11 @@ html,
 }
 
 body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
   background-color: #fff;
+  width: 375px;
   min-width: 320px;
   display: flex;
   flex-direction: column;
