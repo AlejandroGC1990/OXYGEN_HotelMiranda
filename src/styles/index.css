@@ -110,6 +110,9 @@
   font-weight: 700;
 }
 
+.footer {
+  margin-top: -4.55em;
+}
 .footer__container {
   padding: 0.5em 0;
 }
@@ -506,6 +509,9 @@ body main .benefits__pack p span {
   font-size: 3.75em;
   font-weight: 700;
 }
+body main .contactUs {
+  padding: 1em 0 0 0;
+}
 body main .contactUs__containerSection {
   margin-top: 1.5em;
   background-image: url("../assets/contactUs_backgroundImg.png");
@@ -556,30 +562,35 @@ body main .contactUs__containerSection__containerIcons__X {
 body main .contactUs__containerSection h3 {
   font-weight: 400;
   font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 body main .contactUs__containerSection__services {
   display: flex;
   flex-direction: row;
+  padding-top: 1em;
 }
 body main .contactUs__containerSection__services__service {
   width: 50%;
 }
-body main .contactUs__containerSection__services h4 {
+body main .contactUs__containerSection__services__service h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-weight: 400;
+  line-height: 1em;
   color: #C2C2C2;
   font-size: 1em;
   letter-spacing: 0;
   width: 11.5em;
 }
+body main .contactUs__containerSection__contact {
+  padding-top: 0.75em;
+}
 body main .contactUs__containerSection__contact__pack {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 1.25em;
-  padding-top: 1em;
+  margin-bottom: 2.8em;
 }
 body main .contactUs__containerSection__contact__pack img {
   width: 2.5em;
