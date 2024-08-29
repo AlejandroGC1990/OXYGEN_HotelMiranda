@@ -110,6 +110,18 @@
   font-weight: 700;
 }
 
+.footer__container {
+  padding: 0.5em 0;
+}
+.footer__container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 0em 0 0.5em 0.5em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
 body .header h4 {
   color: #fff;
 }

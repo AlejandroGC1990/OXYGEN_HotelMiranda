@@ -1,0 +1,11 @@
+.footer {
+  &__container {
+    padding: 0.5em 0;
+    p {
+      @include roboto;
+      padding: 0em 0 0.5em 0.5em;
+      font-weight: 700;
+      font-size: 1em;
+    }
+  }
+}
