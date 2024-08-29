@@ -268,7 +268,7 @@ body {
         margin-bottom: 0.4em;
       }
 
-      .swiper {
+      .swiperFacilites {
         width: 23.4375em;
         height: 23.125em;
         // overflow: hidden;
@@ -319,29 +319,29 @@ body {
         }
 
         .swiper-pagination {
-          height: 2em;
+          height: 5em;
           width: 10em;
           bottom: 0em;
-          text-align: center;
-          z-index: 10;
+          justify-content: center;
+          z-index: 50;
           display: flex;
           flex-direction: row;
           align-items: center;
+        }
 
-          .swiper-pagination-bullet {
-            width: 1em;
-            height: 1em;
-            background-color: #ededed;
-            opacity: 1;
-            margin: 0 5px;
-            border-radius: 50%;
-            transition: background-color 0.3s;
-          }
+        .swiper-pagination-bullet {
+          width: 1em;
+          height: 1em;
+          background-color: #ededed;
+          opacity: 1;
+          margin: 0 5px;
+          border-radius: 50%;
+          transition: background-color 0.3s;
+        }
 
-          .swiper-pagination-bullet-active {
-            background-color: $color_softyBrown;
-            opacity: 1;
-          }
+        .swiper-pagination-bullet-active {
+          background-color: $color_softyBrown;
+          opacity: 1;
         }
       }
     }
@@ -434,7 +434,7 @@ body {
         justify-content: space-between;
         margin-bottom: 3.5em;
 
-        img{
+        img {
           margin-bottom: 3em;
           width: 4.875em;
           height: 5em;
@@ -447,9 +447,114 @@ body {
           font-size: 1em;
           font-weight: 300;
 
-          span{
+          span {
             font-size: 3.75em;
             font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .contactUs {
+      &__containerSection {
+        margin-top: 1.5em;
+        background-image: url("../assets/contactUs_backgroundImg.png");
+        padding: 2em 0 1em;
+
+        &__containerLogo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 3em;
+
+          &__H {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color_softyBrown;
+            color: #fff;
+            width: 2.5625em;
+            padding: 1.7em 2.5em;
+            margin-right: 1em;
+
+            p {
+              font-weight: 700;
+              font-size: 2.5em;
+            }
+          }
+
+          &__name {
+            span {
+              font-weight: 700;
+            }
+            font-weight: 400;
+            font-size: 1.625em;
+          }
+        }
+
+        &__paragraf {
+          color: #777777;
+          font-weight: 400;
+          font-size: 1em;
+        }
+
+        &__containerIcons {
+          margin: 2em 0 1em;
+          &__others {
+            border: 0.5em solid #f8f8f8;
+          }
+
+          &__X {
+            border: 0.5em solid $color_softyBrown;
+            background-color: $color_softyBrown;
+          }
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 1.5em;
+        }
+
+        &__services {
+          display: flex;
+          flex-direction: row;
+          &__service {
+            width: 50%;
+          }
+          h4 {
+            @include roboto;
+            font-weight: 400;
+            color: $color_greyLetter;
+            font-size: 1em;
+            letter-spacing: 0;
+            width: 11.5em;
+          }
+        }
+
+        &__contact {
+          &__pack {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // background-color: pink;
+            margin-bottom: 1.25em;
+            padding-top: 1em;
+
+            img {
+              width: 2.5em;
+              height: 2.5em;
+            }
+
+            &__text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 1em;
+              h3 {
+                line-height: 0;
+                margin: 1em 0 0.5em;
+              }
+            }
           }
         }
       }

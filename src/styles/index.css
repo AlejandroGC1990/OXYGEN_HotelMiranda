@@ -338,11 +338,11 @@ body main .facilities h2 {
   text-align: center;
   margin-bottom: 0.4em;
 }
-body main .facilities .swiper {
+body main .facilities .swiperFacilites {
   width: 23.4375em;
   height: 23.125em;
 }
-body main .facilities .swiper .swiper-slide {
+body main .facilities .swiperFacilites .swiper-slide {
   width: 100%;
   display: flex;
   top: 0;
@@ -351,42 +351,42 @@ body main .facilities .swiper .swiper-slide {
   align-items: flex-start;
   flex-direction: column;
 }
-body main .facilities .swiper .swiper-slide__containerImg {
+body main .facilities .swiperFacilites .swiper-slide__containerImg {
   padding: 4em 0;
   margin: 1em 0 2em 0;
   width: 100%;
   position: relative;
 }
-body main .facilities .swiper .swiper-slide__containerImg__featuresIcon {
+body main .facilities .swiperFacilites .swiper-slide__containerImg__featuresIcon {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-body main .facilities .swiper .swiper-slide__containerImg__featuresNum {
+body main .facilities .swiperFacilites .swiper-slide__containerImg__featuresNum {
   position: absolute;
   top: 0;
   right: 0;
 }
-body main .facilities .swiper .swiper-slide h3 {
+body main .facilities .swiperFacilites .swiper-slide h3 {
   letter-spacing: 0;
 }
-body main .facilities .swiper .swiper-slide p {
+body main .facilities .swiperFacilites .swiper-slide p {
   padding-left: 0.35em;
   width: 19em;
   line-height: 1.5em;
   margin: 0.75em 0 1.5em;
 }
-body main .facilities .swiper .swiper-pagination {
-  height: 2em;
+body main .facilities .swiperFacilites .swiper-pagination {
+  height: 5em;
   width: 10em;
   bottom: 0em;
-  text-align: center;
-  z-index: 10;
+  justify-content: center;
+  z-index: 50;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet {
+body main .facilities .swiperFacilites .swiper-pagination-bullet {
   width: 1em;
   height: 1em;
   background-color: #ededed;
@@ -395,7 +395,7 @@ body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet {
   border-radius: 50%;
   transition: background-color 0.3s;
 }
-body main .facilities .swiper .swiper-pagination .swiper-pagination-bullet-active {
+body main .facilities .swiperFacilites .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
   opacity: 1;
 }
@@ -493,6 +493,95 @@ body main .benefits__pack p {
 body main .benefits__pack p span {
   font-size: 3.75em;
   font-weight: 700;
+}
+body main .contactUs__containerSection {
+  margin-top: 1.5em;
+  background-image: url("../assets/contactUs_backgroundImg.png");
+  padding: 2em 0 1em;
+}
+body main .contactUs__containerSection__containerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3em;
+}
+body main .contactUs__containerSection__containerLogo__H {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BEAD8E;
+  color: #fff;
+  width: 2.5625em;
+  padding: 1.7em 2.5em;
+  margin-right: 1em;
+}
+body main .contactUs__containerSection__containerLogo__H p {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+body main .contactUs__containerSection__containerLogo__name {
+  font-weight: 400;
+  font-size: 1.625em;
+}
+body main .contactUs__containerSection__containerLogo__name span {
+  font-weight: 700;
+}
+body main .contactUs__containerSection__paragraf {
+  color: #777777;
+  font-weight: 400;
+  font-size: 1em;
+}
+body main .contactUs__containerSection__containerIcons {
+  margin: 2em 0 1em;
+}
+body main .contactUs__containerSection__containerIcons__others {
+  border: 0.5em solid #f8f8f8;
+}
+body main .contactUs__containerSection__containerIcons__X {
+  border: 0.5em solid #BEAD8E;
+  background-color: #BEAD8E;
+}
+body main .contactUs__containerSection h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+body main .contactUs__containerSection__services {
+  display: flex;
+  flex-direction: row;
+}
+body main .contactUs__containerSection__services__service {
+  width: 50%;
+}
+body main .contactUs__containerSection__services h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 400;
+  color: #C2C2C2;
+  font-size: 1em;
+  letter-spacing: 0;
+  width: 11.5em;
+}
+body main .contactUs__containerSection__contact__pack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.25em;
+  padding-top: 1em;
+}
+body main .contactUs__containerSection__contact__pack img {
+  width: 2.5em;
+  height: 2.5em;
+}
+body main .contactUs__containerSection__contact__pack__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+}
+body main .contactUs__containerSection__contact__pack__text h3 {
+  line-height: 0;
+  margin: 1em 0 0.5em;
 }
 
 html,
