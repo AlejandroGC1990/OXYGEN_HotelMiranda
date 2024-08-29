@@ -1,0 +1,36 @@
+@import "../../../_variables";
+
+.benefits {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &__pack {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3.5em;
+
+      img {
+        margin-bottom: 3em;
+        width: 4.875em;
+        height: 5em;
+      }
+
+      p {
+        @include roboto;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 300;
+
+        span {
+          font-size: 3.75em;
+          font-weight: 700;
+        }
+      }
+    }
+  }

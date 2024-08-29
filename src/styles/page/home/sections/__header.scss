@@ -1,0 +1,29 @@
+@import "../../../_variables";
+
+.header {
+    h4 {
+      color: #fff;
+    }
+  
+    h2 {
+      padding-bottom: 0.7em;
+      color: #fff;
+    }
+  
+    button {
+      padding: 1.6em 3.75em;
+      margin-bottom: 1.8em;
+    }
+  
+    &__takeTour {
+      border: none;
+      background-color: $color_softyBrown;
+      color: #fff;
+    }
+  
+    &__learnMore {
+      border: 0.125em solid $color_borderButton;
+      background-color: transparent;
+      border-color: #ffffff54;
+    }
+  }

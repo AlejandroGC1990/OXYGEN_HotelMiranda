@@ -1,0 +1,43 @@
+@import "../../../_variables";
+
+.reservationCalendar {
+  background: $color_black;
+  margin-bottom: 3.8em;
+  padding: 2.4em 1em;
+
+  &__pack {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.2em;
+
+    label {
+      @include roboto;
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.9em;
+      padding-bottom: 0.8em;
+    }
+
+    input {
+      width: 25em;
+      padding: 1em 1.7em;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid $color_softyBrown;
+    }
+
+    img {
+      position: absolute;
+      width: 15.07px;
+      height: 1em;
+      margin: 2.4em 0em 0em 0;
+    }
+  }
+
+  button {
+    @include button__softyBrown;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
