@@ -1,7 +1,13 @@
 @import "./_mixin";
 @import "./_variables";
 @import "./components/_nav";
-@import "./page/_home";
+@import "./components/_footer";
+@import "./page/home/_home";
+@import "./page/aboutUs/_aboutUs";
+@import "./page/rooms/_rooms";
+@import "./page/roomDetail/_roomDetail";
+@import "./page/ofers/_ofers";
+@import "./page/blog/_blog";
 
 html,
 * {

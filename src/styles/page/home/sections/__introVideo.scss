@@ -1,0 +1,33 @@
+@import "../../../_variables";
+
+.introVideo {
+  background-color: $color_black;
+  padding: 4em 01em 2.2em 1em;
+
+  h4 {
+    color: $color_softyBrown;
+    margin-bottom: 1.5em;
+  }
+
+  h2 {
+    color: #fff;
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    color: $color_greyLetter;
+    padding: 0.5em;
+  }
+
+  iframe {
+    width: 21em;
+    height: 16.875em;
+    margin-bottom: 1.5em;
+  }
+
+  button {
+    @include button__softyBrown;
+    padding-left: 4.3em;
+    padding-right: 4.3em;
+  }
+}
