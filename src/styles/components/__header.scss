@@ -1,0 +1,25 @@
+//ABOUTUS HEADER
+
+@import "../__variables";
+@import "../__mixin";
+
+.header {
+  position: relative;
+  
+  &__locationWeb {
+    background-color: #fff;
+    padding: 1em;
+    width: 9.75em;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+
+    &__p {
+        @include archivo-font;
+        text-align: center;
+      &__span2 {
+        color: $color_softyBrown;
+      }
+    }
+  }
+}

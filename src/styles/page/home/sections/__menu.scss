@@ -1,4 +1,4 @@
-@import "../../../_variables";
+@import "../../../__variables";
 
 .menu {
   background-image: url(../assets/icon_menu.png);
@@ -6,7 +6,7 @@
   background-position: 17.9em 0em;
   background-size: 7.1563em;
   padding-top: 7.5em;
-  padding-bottom: 10em;
+  padding-bottom: 2.5em;
 
   h2 {
     margin-bottom: 0.2em;
@@ -69,7 +69,43 @@
     }
   }
 
-//   .swiperMenu2 {
-//     background-color: greenyellow;
-//   }
+  .swiperMenu2 {
+    // background-color: greenyellow;
+    position: relative;
+    padding-bottom: 0.5em;
+    //? ///////////////////
+    .swiper-slide {
+      // width: 100%;
+      display: flex;
+      top: 0;
+      flex-direction: column;
+      padding: 0 0em 1.5em 0em;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .swiper-pagination {
+      height: 5em;
+      width: 10em;
+      bottom: -4em;
+      position: absolute;
+      left: 5.75em;
+      flex-direction: row;
+    }
+
+    .swiper-pagination-bullet {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: #ededed;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $color_softyBrown;
+      opacity: 1;
+    }
+  }
 }

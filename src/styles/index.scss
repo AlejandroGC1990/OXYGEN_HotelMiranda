@@ -1,13 +1,14 @@
-@import "./_mixin";
+@import "./__mixin";
 @import "./_variables";
-@import "./components/_nav";
-@import "./components/_footer";
-@import "./page/home/_home";
-@import "./page/aboutUs/_aboutUs";
-@import "./page/rooms/_rooms";
-@import "./page/roomDetail/_roomDetail";
-@import "./page/ofers/_ofers";
-@import "./page/blog/_blog";
+@import "./components/__nav";
+@import "./components/_header";
+@import "./components/__footer";
+@import "./page/home/__home";
+@import "./page/aboutUs/_aboutUsPage";
+@import "./page/rooms/_roomsPage";
+@import "./page//roomDetail/_roomsDetailPage";
+@import "./page/ofers/_ofersPage";
+@import "./page/blog/_blogPage";
 
 html,
 * {
@@ -41,7 +42,9 @@ body {
     font-size: 0.813em;
     letter-spacing: 2.8px;
     margin-bottom: 1.9em;
+    letter-spacing: 0.275em;
   }
+  
   h3 {
     @include old-standard-tt;
     font-size: 1.875em;
