@@ -12,18 +12,15 @@
   h2 {
     font-size: 3.4em;
     text-align: center;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.75em;
   }
 
   .swiperFacilites {
     width: 23.4375em;
     height: 23.125em;
-    // overflow: hidden;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
-    // position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .swiper-slide {
       width: 100%;
@@ -60,25 +57,23 @@
       p {
         padding-left: 0.35em;
         width: 19em;
-        line-height: 1.5em;
-        margin: 0.75em 0 1.5em;
+        line-height: 1.75em;
+        margin: 0.8em 0 2em;
       }
     }
 
     .swiper-pagination {
       height: 5em;
       width: 10em;
-      bottom: 0em;
-      justify-content: center;
-      z-index: 50;
-      display: flex;
+      bottom: -4em;
+      position: absolute;
+      left: 6.85em;
       flex-direction: row;
-      align-items: center;
     }
 
     .swiper-pagination-bullet {
-      width: 1em;
-      height: 1em;
+      width: 0.5em;
+      height: 0.5em;
       background-color: #ededed;
       opacity: 1;
       margin: 0 5px;
