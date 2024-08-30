@@ -110,12 +110,16 @@
   font-weight: 700;
 }
 
+.header {
+  position: relative;
+}
 .header__locationWeb {
   background-color: #fff;
   padding: 1em;
   width: 9.75em;
   position: absolute;
   right: 1em;
+  bottom: 0;
 }
 .header__locationWeb__p {
   font-family: "Archivo", sans-serif;
@@ -744,12 +748,16 @@
   font-weight: 700;
 }
 
+.header {
+  position: relative;
+}
 .header__locationWeb {
   background-color: #fff;
   padding: 1em;
   width: 9.75em;
   position: absolute;
   right: 1em;
+  bottom: 0;
 }
 .header__locationWeb__p {
   font-family: "Archivo", sans-serif;
