@@ -21,13 +21,24 @@
   <body>
     <nav class="nav">
       <div class="nav__container">
-        <button class="nav__container__burger" id="open">
-          <img src="./src/assets/icon_burguer.png" />
-        </button>
+        <div class="nav__container__select">
+          <button class="nav__container__select__burger" id="open" alt="burguer">
+            <img src="../assets/icon_burguer" />           
+          </button>
+          
+          <button class="nav__container__select__close" id="close" alt="cros">
+            <img src="../assets/icon_X.png" />
+          </button>
 
-        <button class="nav__container__close" id="close">
-          <img src="./src/assets/icon_X.png" />
-        </button>
+          <div class="nav__container__select__ul">
+            <ul class="menu" id="subnav">
+              <li><a>About Us</a></li>
+              <li><a>Rooms</a></li>
+              <li><a>Offers</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </div>
 
         <div class="nav__container__logo">
           <div class="nav__container__logo__H">
@@ -48,14 +59,6 @@
               src="./src/assets/icon_search.png"
           /></a>
         </div>
-      </div>
-      <div class="nav__containerUl">
-        <ul class="menu" id="subnav">
-          <li><a>About Us</a></li>
-          <li><a>Rooms</a></li>
-          <li><a>Offers</a></li>
-          <li><a>Contact</a></li>
-        </ul>
       </div>
     </nav>
 

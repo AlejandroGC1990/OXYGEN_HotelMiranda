@@ -11,7 +11,7 @@
   background-color: #fff;
   z-index: 5;
   box-shadow: 0px 3px 6px 0px #0000004a;
-  
+
   &__container {
     box-shadow: 0px 3px 6px 0px #0000004a;
     display: flex;
@@ -22,30 +22,87 @@
     background-color: #fff;
     z-index: 5;
 
-    button {
-      background: none;
-      border: none;
-      width: 1.25em;
-      height: 0.8em;
-      cursor: pointer;
-      
-    }
+    &__select {
+      display: flex;
+      align-items: center;
 
-    &__burger {
-      padding: 0;
-    }
+      button {
+        background: none;
+        border: none;
+        width: 1.25em;
+        height: 0.8em;
+        cursor: pointer;
 
-    &__close {
-      display: none;
-    }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
 
-    &__burger.close {
-      display: none;
-    }
-  
-    &__close.open {
-      padding: 0;
-      display: block;
+      &__burger {
+        display: block;
+        padding: 0;
+
+        &.close {
+          display: none;
+        }
+      }
+
+      &__close {
+        display: none;
+
+        &.open {
+          display: block;
+        }
+      }
+
+      // &__burger.close {
+      //   display: none;
+      // }
+
+      // &__close.open {
+      //   padding: 0;
+      //   display: block;
+      // }
+//
+      &__ul {
+        position: relative;
+
+        .menu {
+          display: none;
+          background-color: #fff;
+          padding-top: 0.5em;
+          position: absolute;
+          top: 4.4em;
+          padding: 1em;
+          z-index: 0;
+          width: 23.4375em;
+          z-index: 10;
+        }
+
+        &.open { display: block; }
+
+          li {
+            padding: 0.25em 0;
+            display: flex;
+            flex-direction: column;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 2em;
+            text-align: left;
+            list-style-type: none;
+
+            a {
+              @include archivo-font;
+              font-weight: bold;
+            }
+          }
+
+          li:hover {
+            color: black;
+            font-weight: 700;
+          }
+      }
     }
 
     &__logo {
@@ -82,51 +139,4 @@
       }
     }
   }
-
-  &__containerUl {
-    ul.menu.open {
-      display: block;
-    }
-    
-    .menu {
-      background-color: #fff;
-      padding-top: 0.5em;
-      position: absolute;
-      top: 4.4em;
-      padding: 1em;
-      z-index: 0;
-      width: 23.4375em;
-    }
-
-    ul {
-      z-index: 0;
-      display: none;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      
-      li {
-        z-index: 0;
-        padding: 0.25em 0;
-        display: flex;
-        flex-direction: column;
-        font-size: 1em;
-        font-weight: 600;
-        line-height: 2em;
-        text-align: left;
-        
-        a {
-          @include archivo-font;
-          font-weight: bold;
-        }
-      }
-      
-      li:hover {
-        color: black;
-        font-weight: 700;
-      }
-    }
-  }
-  
-  
 }
