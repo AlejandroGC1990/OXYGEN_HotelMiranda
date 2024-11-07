@@ -1,15 +1,18 @@
-const subnav = document.getElementById("subnav");
-const open = document.getElementById("open");
-const close = document.getElementById("close");
+document.addEventListener("DOMContentLoaded", () => {
+  const subnav = document.getElementById("subnav");
+  const open = document.getElementById("open");
+  const close = document.getElementById("close");
 
-open.addEventListener("click", () => {
+  open.addEventListener("click", () => {
+    console.log("open");
     open.classList.add("close");
     close.classList.add("open");
     subnav.classList.add("open");
-});
+  });
 
-close.addEventListener("click", () => {
+  close.addEventListener("click", () => {
     subnav.classList.remove("open");
     close.classList.remove("open");
     open.classList.remove("close");
+  });
 });

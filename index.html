@@ -23,21 +23,12 @@
       <div class="nav__container">
         <div class="nav__container__select">
           <button class="nav__container__select__burger" id="open" alt="burguer">
-            <img src="../assets/icon_burguer" />           
+            <img src="./src/assets/icon_burguer.png" />           
           </button>
           
           <button class="nav__container__select__close" id="close" alt="cros">
-            <img src="../assets/icon_X.png" />
+            <img src="./src/assets/icon_X.png" />
           </button>
-
-          <div class="nav__container__select__ul">
-            <ul class="menu" id="subnav">
-              <li><a>About Us</a></li>
-              <li><a>Rooms</a></li>
-              <li><a>Offers</a></li>
-              <li><a>Contact</a></li>
-            </ul>
-          </div>
         </div>
 
         <div class="nav__container__logo">
@@ -59,6 +50,14 @@
               src="./src/assets/icon_search.png"
           /></a>
         </div>
+      </div>
+      <div class="nav__containerMenu">
+        <ul class="nav__containerMenu__menu" id="subnav">
+          <li><a href="./src/pages/aboutUs.html">About Us</a></li>
+          <li><a>Rooms</a></li>
+          <li><a>Offers</a></li>
+          <li><a>Contact</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -533,7 +532,7 @@
       </footer>
     </main>
 
-    <script src="./src/scripts/nav.js"></script>
+    <script src="./src/scripts/components/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/scripts/home/slicerSwiperArrowRooms.js"></script>
     <script src="./src/scripts/home/slicerSwiperPounts.js"></script>
