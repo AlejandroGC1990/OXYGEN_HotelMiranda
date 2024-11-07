@@ -16,25 +16,28 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" type="text/css" href="../styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/page/aboutUs/__aboutUsPage.scss" />
   </head>
 
   <body>
     <nav class="nav">
       <div class="nav__container">
-        <button class="nav__container__burger" id="open">
-          <img src="../assets/icon_burguer.png" />
-        </button>
+        <div class="nav__container__select">
+          <button class="nav__container__select__burger" id="open" alt="burguer">
+            <img src="../assets/icon_burguer.png" />           
+          </button>
+          
+          <button class="nav__container__select__close" id="close" alt="cros">
+            <img src="../assets/icon_X.png" />
+          </button>
+        </div>
 
-        <button class="nav__container__close" id="close">
-          <img src="../assets/icon_X.png" />
-        </button>
-
-        <div class="nav__container__logo">
+        <a class="nav__container__logo" href="../../index.html">
           <div class="nav__container__logo__H">
             <img src="../assets/icon_logo_H.png" />
           </div>
           <img src="../assets/img_logo_Hotel Miranda.png" />
-        </div>
+        </a>
 
         <div class="nav__container__containerIcons">
           <a
@@ -49,12 +52,12 @@
           /></a>
         </div>
       </div>
-      <div class="nav__containerUl">
-        <ul class="menu" id="subnav">
-          <li><a>About Us</a></li>
-          <li><a>Rooms</a></li>
-          <li><a>Offers</a></li>
-          <li><a>Contact</a></li>
+      <div class="nav__containerMenu">
+        <ul class="nav__containerMenu__menu" id="subnav">
+          <li><a href="./src/pages/aboutUs.html">About Us</a></li>
+          <li><a href="./src/pages/rooms.html">Rooms</a></li>
+          <li><a href="./src/pages/offers.html">Offers</a></li>
+          <li><a href="./src/pages/contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -62,7 +65,7 @@
     <main>
       <header class="header">
         <h4>THE ULTIMATE LUXURY</h4>
-        <h2>About Us</h2>
+        <h1>About Us</h1>
         <div class="header__locationWeb">
           <p class="header__locationWeb__p">
             <span>Home</span> |
@@ -80,9 +83,10 @@
           allowfullscreen
         >
         </iframe>
+        <h3 class="tittle">Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h3>
       </section>
     </main>
 
-    <script src="./src/scripts/nav.js"></script>
+    <script src="../scripts/components/nav.js"></script>
   </body>
 </html>

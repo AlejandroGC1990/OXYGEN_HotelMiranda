@@ -6,7 +6,7 @@
 @import "./page/home/__home";
 @import "./page/aboutUs/_aboutUsPage";
 @import "./page/rooms/_roomsPage";
-@import "./page//roomDetail/_roomsDetailPage";
+@import "./page/roomDetail/_roomsDetailPage";
 @import "./page/ofers/_ofersPage";
 @import "./page/blog/_blogPage";
 
@@ -22,7 +22,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  width: 375px;
+  width: 100%;
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -34,17 +34,20 @@ body {
     padding-top: 1.6em;
     padding-bottom: 1.6em;
   }
-
-  h4 {
-    @include archivo-font;
-    line-height: 0.9em;
-    font-weight: 600;
-    font-size: 0.813em;
-    letter-spacing: 2.8px;
-    margin-bottom: 1.9em;
-    letter-spacing: 0.275em;
+  
+  h1 {
+    @include old-standard-tt;
+    font-size: 3.5em;
+    font-weight: 400;
+    color: #fff;
   }
   
+  h2 {
+    @include old-standard-tt;
+    font-size: 3.5em;
+    font-weight: 400;
+  }
+
   h3 {
     @include old-standard-tt;
     font-size: 1.875em;
@@ -53,11 +56,15 @@ body {
     letter-spacing: 0.0562em;
     text-align: left;
   }
-
-  h2 {
-    @include old-standard-tt;
-    font-size: 3.5em;
-    font-weight: 400;
+   
+  h4 {
+    @include archivo-font;
+    line-height: 0.9em;
+    font-weight: 600;
+    font-size: 0.813em;
+    letter-spacing: 2.8px;
+    margin-bottom: 1.9em;
+    letter-spacing: 0.275em;
   }
 
   p {
@@ -75,6 +82,7 @@ body {
   }
 
   main {
+    width: 100%;
     section {
       padding: 2.5em 1.2em;
     }
