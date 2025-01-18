@@ -21,20 +21,22 @@
   <body>
     <nav class="nav">
       <div class="nav__container">
-        <button class="nav__container__burger" id="open">
-          <img src="./src/assets/icon_burguer.png" />
-        </button>
-
-        <button class="nav__container__close" id="close">
-          <img src="./src/assets/icon_X.png" />
-        </button>
-
-        <div class="nav__container__logo">
-          <div class="nav__container__logo__H">
-            <img src="./src/assets/icon_logo_H.png" />
-          </div>
-          <img src="./src/assets/img_logo_Hotel Miranda.png" />
+        <div class="nav__container__select">
+          <button class="nav__container__select__burger" id="open" alt="burguer">
+            <img src="./src/assets/icon_burguer.png" />           
+          </button>
+          
+          <button class="nav__container__select__close" id="close" alt="cros">
+            <img src="./src/assets/icon_X.png" />
+          </button>
         </div>
+
+        <a class="nav__container__logo" href="../../index.html">
+          <div class="nav__container__logo__H">
+            <img src="../src/assets/icon_logo_H.png" />
+          </div>
+          <img src="../src/assets/img_logo_Hotel Miranda.png" />
+        </a>
 
         <div class="nav__container__containerIcons">
           <a
@@ -49,12 +51,12 @@
           /></a>
         </div>
       </div>
-      <div class="nav__containerUl">
-        <ul class="menu" id="subnav">
-          <li><a>About Us</a></li>
-          <li><a>Rooms</a></li>
-          <li><a>Offers</a></li>
-          <li><a>Contact</a></li>
+      <div class="nav__containerMenu">
+        <ul class="nav__containerMenu__menu" id="subnav">
+          <li><a href="./src/pages/aboutUs.html">About Us</a></li>
+          <li><a href="./src/pages/rooms.html">Rooms</a></li>
+          <li><a href="./src/pages/offers.html">Offers</a></li>
+          <li><a href="./src/pages/contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -64,10 +66,10 @@
         THE ULTIMATE LUXURY <br />
         EXPERIENCE
       </h4>
-      <h2>
+      <h1>
         The Perfect <br />
         Base For You
-      </h2>
+      </h1>
       <button class="header__takeTour">TAKE A TOUR</button>
       <button class="header__learnMore">LEARN MORE</button>
     </header>
@@ -530,7 +532,7 @@
       </footer>
     </main>
 
-    <script src="./src/scripts/nav.js"></script>
+    <script src="./src/scripts/components/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/scripts/home/slicerSwiperArrowRooms.js"></script>
     <script src="./src/scripts/home/slicerSwiperPounts.js"></script>

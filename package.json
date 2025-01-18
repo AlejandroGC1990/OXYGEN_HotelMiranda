@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-router-dom": "^6.26.1",
+    "styled-components": "^6.1.13",
     "swiper": "^11.1.10"
   }
 }
