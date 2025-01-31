@@ -1,14 +1,14 @@
 @import "./__mixin";
 @import "./_variables";
 @import "./components/__nav";
-@import "./components/_header";
+@import "./components/__header";
 @import "./components/__footer";
 @import "./page/home/__home";
 @import "./page/aboutUs/_aboutUsPage";
 @import "./page/rooms/_roomsPage";
 @import "./page/roomDetail/_roomsDetailPage";
 @import "./page/ofers/_ofersPage";
-@import "./page/blog/_blogPage";
+// @import "./page/blog/_blogPage";
 
 html,
 * {
@@ -26,20 +26,13 @@ body {
   min-width: 320px;
   display: flex;
   flex-direction: column;
-
-  button {
-    color: #fff;
-    background-color: none;
-    letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-  }
   
   h1 {
     @include old-standard-tt;
     font-size: 3.5em;
     font-weight: 400;
     color: #fff;
+    padding-bottom: 0.5em;
   }
   
   h2 {
@@ -62,8 +55,9 @@ body {
     line-height: 0.9em;
     font-weight: 600;
     font-size: 0.813em;
-    letter-spacing: 2.8px;
-    margin-bottom: 1.9em;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    padding-bottom: 3em;
     letter-spacing: 0.275em;
   }
 
@@ -77,7 +71,8 @@ body {
   }
 
   header {
-    padding: 9.13em 0em 3.7em 1.5em;
+    color: #fff;
+    padding: 8em 0em 3.7em 1.5em;
     background-color: $color_header;
   }
 
@@ -86,6 +81,10 @@ body {
     section {
       padding: 2.5em 1.2em;
     }
+  }
+
+  button {
+    @include generic_button;
   }
 }
 

@@ -17,6 +17,7 @@
     &__p {
         @include archivo-font;
         text-align: center;
+        color: $color_black;
       &__span2 {
         color: $color_softyBrown;
       }

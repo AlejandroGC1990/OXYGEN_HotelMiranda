@@ -36,8 +36,7 @@
   }
 
   button {
-    @include button__softyBrown;
-    padding-left: 2em;
-    padding-right: 2em;
+    @include generic_button;
+    width: 19em;
   }
 }
