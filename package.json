@@ -5,5 +5,8 @@
     "react-router-dom": "^6.26.1",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.10"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4"
   }
 }

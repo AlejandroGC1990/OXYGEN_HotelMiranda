@@ -1,10 +1,21 @@
 @import "../../_variables";
-@import "../home/sections/__headerHome";
-@import "../home/sections/__reservationCalendar";
-@import "../home/sections/__aboutUs";
-@import "../home/sections/__rooms";
-@import "../home/sections/__introVideo";
-@import "../home/sections/__facilities";
-@import "../home/sections/__menu";
-@import "../home/sections/__benefits";
-@import "../home/sections/__contactUs";
+// @import "../home/sections/__headerHome";
+// @import "../home/sections/__reservationCalendar";
+// @import "../home/sections/__aboutUs";
+// @import "../home/sections/__rooms";
+// @import "../home/sections/__introVideo";
+// @import "../home/sections/__facilities";
+// @import "../home/sections/__menu";
+// @import "../home/sections/__benefits";
+// @import "../home/sections/__contactUs";
+
+.header{
+    .header h4 {
+        color: $color_white; 
+    }
+
+    .header__buttonBlack {
+        background-color: transparent;
+        border: 0.125em solid #FFFFFF54;
+    }
+}

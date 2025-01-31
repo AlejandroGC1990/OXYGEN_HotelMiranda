@@ -1,29 +1,31 @@
 @import "../_mixin";
 
 .nav {
+  position: fixed;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0;
   margin: 0;
-  flex-direction: column;
-  position: fixed;
   width: 100%;
   top: 0em;
-  background-color: #fff;
+  background-color: $color_white;
+  height: 4.37em;
   z-index: 5;
-
+  
   &__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 4.37em;
-    z-index: 5;
+    height: 100%;
     box-shadow: 0px 3px 6px 0px #0000004a;
+    z-index: 5;
 
     &__select {
       display: flex;
       align-items: center;
-      padding: 0 0 0 1em;
+      justify-content: center;
+      padding: 0 2em 0 1em;
+      height: 100%;
 
       button {
         background: none;
@@ -49,7 +51,6 @@
 
       &__close {
         display: none;
-        padding-top: 1em;
 
         &.open {
           display: block;
@@ -61,7 +62,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0.5em 0 0 2em;
+      margin: 0.5em 0 0 0em;
 
       &__H {
         align-items: center;
@@ -77,8 +78,8 @@
 
     &__containerIcons {
       display: flex;
-      padding: 0 1em 0 0;
-      margin: 0.4em 0 0 4em;
+      padding: 0 1em 0 5em;
+      margin: 0.4em 0 0 0em;
 
       a {
         display: flex;
@@ -98,8 +99,8 @@
 
     &__menu {
       display: none;
-      background-color: #fff;
       position: absolute;
+      background-color: #fff;
       width: 100%;
       padding: 1em 1.5em;
 
