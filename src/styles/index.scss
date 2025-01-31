@@ -26,16 +26,6 @@ body {
   min-width: 320px;
   display: flex;
   flex-direction: column;
-
-  button {
-    color: #fff;
-    background-color: $color_softyBrown;
-    border: none;
-    letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-    width: 216px;
-  }
   
   h1 {
     @include old-standard-tt;
@@ -91,6 +81,10 @@ body {
     section {
       padding: 2.5em 1.2em;
     }
+  }
+
+  button {
+    @include generic_button;
   }
 }
 

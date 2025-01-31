@@ -95,6 +95,26 @@
       color: black;
       font-weight: 700; }
 
+.header {
+  position: relative; }
+  .header__locationWeb {
+    background-color: #fff;
+    padding: 1em;
+    width: 9.75em;
+    position: absolute;
+    right: 1em;
+    bottom: 0; }
+    .header__locationWeb__p {
+      font-family: "Archivo", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      text-align: center;
+      color: #222222; }
+      .header__locationWeb__p__span2 {
+        color: #BEAD8E; }
+
 .footer {
   margin-top: -4em;
   background-color: #F8F8F8; }
@@ -137,10 +157,14 @@
       height: 1em;
       margin: 2.4em 0em 0em 0; }
   .reservationCalendar button {
-    border: none;
+    color: #fff;
     background-color: #BEAD8E;
-    padding-left: 2em;
-    padding-right: 2em; }
+    border: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    width: 17em;
+    width: 19em; }
 
 .header__buttonBlack {
   background-color: transparent;
@@ -244,6 +268,26 @@
       color: black;
       font-weight: 700; }
 
+.header {
+  position: relative; }
+  .header__locationWeb {
+    background-color: #fff;
+    padding: 1em;
+    width: 9.75em;
+    position: absolute;
+    right: 1em;
+    bottom: 0; }
+    .header__locationWeb__p {
+      font-family: "Archivo", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      text-align: center;
+      color: #222222; }
+      .header__locationWeb__p__span2 {
+        color: #BEAD8E; }
+
 html,
 * {
   box-sizing: border-box;
@@ -259,14 +303,6 @@ body {
   min-width: 320px;
   display: flex;
   flex-direction: column; }
-  body button {
-    color: #fff;
-    background-color: #BEAD8E;
-    border: none;
-    letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-    width: 216px; }
   body h1 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -319,5 +355,13 @@ body {
     width: 100%; }
     body main section {
       padding: 2.5em 1.2em; }
+  body button {
+    color: #fff;
+    background-color: #BEAD8E;
+    border: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    width: 17em; }
 
 /*# sourceMappingURL=index.css.map */

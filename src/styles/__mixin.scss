@@ -31,7 +31,12 @@
 
 //! BUTTOM
 
-@mixin button__softyBrown {
-  border: none;
+@mixin generic_button {
+  color: #fff;
   background-color: $color_softyBrown;
+  border: none;
+  letter-spacing: 0.27em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+  width: 17em;
 }
