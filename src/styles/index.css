@@ -95,25 +95,6 @@
       color: black;
       font-weight: 700; }
 
-.header {
-  position: relative; }
-  .header__locationWeb {
-    background-color: #fff;
-    padding: 1em;
-    width: 9.75em;
-    position: absolute;
-    right: 1em;
-    bottom: 0; }
-    .header__locationWeb__p {
-      font-family: "Archivo", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 100;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-      text-align: center; }
-      .header__locationWeb__p__span2 {
-        color: #BEAD8E; }
-
 .footer {
   margin-top: -4em;
   background-color: #F8F8F8; }
@@ -127,11 +108,44 @@
       font-weight: 700;
       font-size: 1em; }
 
-.header .header h4 {
-  color: #fff; }
-.header .header__buttonBlack {
+.reservationCalendar {
+  background: #222222;
+  margin-bottom: 3.8em;
+  padding: 2.4em 1em; }
+  .reservationCalendar__pack {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.2em; }
+    .reservationCalendar__pack label {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.9em;
+      padding-bottom: 0.8em; }
+    .reservationCalendar__pack input {
+      width: 25em;
+      padding: 1em 1.7em;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #BEAD8E; }
+    .reservationCalendar__pack img {
+      position: absolute;
+      width: 15.07px;
+      height: 1em;
+      margin: 2.4em 0em 0em 0; }
+  .reservationCalendar button {
+    border: none;
+    background-color: #BEAD8E;
+    padding-left: 2em;
+    padding-right: 2em; }
+
+.header__buttonBlack {
   background-color: transparent;
-  border: 0.125em solid #FFFFFF54; }
+  border: 0.125em solid #FFFFFF54;
+  margin: 2em 0 1em; }
 
 .nav {
   position: fixed;
@@ -230,25 +244,6 @@
       color: black;
       font-weight: 700; }
 
-.header {
-  position: relative; }
-  .header__locationWeb {
-    background-color: #fff;
-    padding: 1em;
-    width: 9.75em;
-    position: absolute;
-    right: 1em;
-    bottom: 0; }
-    .header__locationWeb__p {
-      font-family: "Archivo", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 100;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-      text-align: center; }
-      .header__locationWeb__p__span2 {
-        color: #BEAD8E; }
-
 html,
 * {
   box-sizing: border-box;
@@ -264,13 +259,21 @@ body {
   min-width: 320px;
   display: flex;
   flex-direction: column; }
+  body button {
+    color: #fff;
+    background-color: #BEAD8E;
+    border: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    width: 216px; }
   body h1 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
     font-size: 3.5em;
     font-weight: 400;
     color: #fff;
-    padding-bottom: 0.7em; }
+    padding-bottom: 0.5em; }
   body h2 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -309,7 +312,8 @@ body {
     line-height: 24px;
     text-align: left; }
   body header {
-    padding: 9.13em 0em 3.7em 1.5em;
+    color: #fff;
+    padding: 8em 0em 3.7em 1.5em;
     background-color: #333333; }
   body main {
     width: 100%; }

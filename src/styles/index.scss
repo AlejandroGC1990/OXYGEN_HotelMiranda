@@ -27,22 +27,22 @@ body {
   display: flex;
   flex-direction: column;
 
-  // button {
-  //   color: #fff;
-  //   background-color: $color_softyBrown;
-  //   border: none;
-  //   letter-spacing: 0.27em;
-  //   padding-top: 1.6em;
-  //   padding-bottom: 1.6em;
-  //   width: 216px;
-  // }
+  button {
+    color: #fff;
+    background-color: $color_softyBrown;
+    border: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    width: 216px;
+  }
   
   h1 {
     @include old-standard-tt;
     font-size: 3.5em;
     font-weight: 400;
     color: #fff;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.5em;
   }
   
   h2 {
@@ -81,7 +81,8 @@ body {
   }
 
   header {
-    padding: 9.13em 0em 3.7em 1.5em;
+    color: #fff;
+    padding: 8em 0em 3.7em 1.5em;
     background-color: $color_header;
   }
 
