@@ -171,6 +171,212 @@
   border: 0.125em solid #FFFFFF54;
   margin: 2em 0 1em; }
 
+.aboutUs {
+  padding: 0; }
+  .aboutUs__discover {
+    padding: 2.5em 1.2em 0;
+    background: #f9f9f9;
+    padding-bottom: 11.5em;
+    margin-bottom: 45em; }
+    .aboutUs__discover h4 {
+      color: #777777; }
+    .aboutUs__discover h2 {
+      padding-bottom: 0.2em; }
+    .aboutUs__discover p {
+      margin-bottom: 1.8em; }
+    .aboutUs__discover button {
+      color: #fff;
+      background-color: #BEAD8E;
+      border: none;
+      letter-spacing: 0.27em;
+      padding-top: 1.6em;
+      padding-bottom: 1.6em;
+      width: 17em;
+      padding-left: 4.3em;
+      padding-right: 4.3em; }
+  .aboutUs__containerCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -53em;
+    padding: 0; }
+    .aboutUs__containerCards__card {
+      z-index: 1;
+      width: 17.5em;
+      margin-top: 0em; }
+      .aboutUs__containerCards__card__head {
+        width: 100%;
+        height: 18.5em;
+        background: #e4e4e4;
+        padding: 5.5em; }
+      .aboutUs__containerCards__card img {
+        width: 4.5em;
+        margin-bottom: 1em; }
+      .aboutUs__containerCards__card p {
+        text-align: center;
+        width: 15em; }
+      .aboutUs__containerCards__card__data1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../assets/icon_team_big.png);
+        background-repeat: no-repeat;
+        background-position: 8.55em 2.9em;
+        box-shadow: 0px 8px 16px 0px #22222205;
+        padding: 3em 0 3.5em; }
+      .aboutUs__containerCards__card__data2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222222;
+        color: #ffffff;
+        padding: 3em 0 3em;
+        margin-bottom: 1.5em; }
+        .aboutUs__containerCards__card__data2 img {
+          width: 2.92em; }
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-left: 0; }
+  .rooms h4 {
+    padding-bottom: 1em; }
+  .rooms h2 {
+    padding-bottom: .4em; }
+  .rooms img {
+    margin-bottom: -3em;
+    z-index: 1; }
+  .rooms .swiperRooms {
+    z-index: 0;
+    width: 23.4375em;
+    height: 15.25em;
+    overflow: hidden; }
+    .rooms .swiperRooms .swiper-slide {
+      background-color: grey; }
+    .rooms .swiperRooms .swiper-button-prev,
+    .rooms .swiperRooms .swiper-button-next {
+      width: 2em;
+      height: 2em; }
+    .rooms .swiperRooms .swiper-button-prev:after,
+    .rooms .swiperRooms .swiper-button-next:after {
+      display: none; }
+  .rooms__article {
+    background-color: #fff;
+    padding: 1.5em 2em 0em;
+    margin-bottom: 4.3em;
+    margin-top: -1em;
+    z-index: 1;
+    position: relative; }
+    .rooms__article h3 {
+      line-height: 0.5em;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-size: 1.75em;
+      padding-bottom: 0.75em; }
+    .rooms__article p {
+      text-align: center;
+      width: 18em;
+      padding: 0; }
+    .rooms__article img {
+      position: relative;
+      z-index: 2;
+      margin-top: -5em; }
+
+.introVideo {
+  background-color: #222222;
+  padding: 4em 01em 2.2em 1em; }
+  .introVideo h4 {
+    color: #BEAD8E;
+    padding-bottom: 2em; }
+  .introVideo h2 {
+    color: #fff;
+    padding-bottom: 0.2em;
+    line-height: 1.1em; }
+  .introVideo p {
+    color: #C2C2C2;
+    padding: 0.5em 0 2em; }
+  .introVideo iframe {
+    width: 21em;
+    height: 16.875em;
+    margin-bottom: 2em; }
+  .introVideo button {
+    color: #fff;
+    background-color: #BEAD8E;
+    border: none;
+    letter-spacing: 0.27em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    width: 17em;
+    margin-bottom: 1em; }
+
+.facilities {
+  padding-bottom: 3.5em;
+  padding-left: 0; }
+  .facilities h4 {
+    margin-top: 1.9em;
+    padding-bottom: 1.35em;
+    text-align: center; }
+  .facilities h2 {
+    font-size: 3.4em;
+    text-align: center;
+    margin-bottom: 0.5em; }
+  .facilities .swiperFacilites {
+    width: 23.4375em;
+    height: 23.125em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .facilities .swiperFacilites .swiper-slide {
+      width: 100%;
+      display: flex;
+      top: 0;
+      padding: 0 2.5em 0 1.5em;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .facilities .swiperFacilites .swiper-slide__containerImg {
+        padding: 4em 0;
+        margin: 1em 0 2em 0;
+        width: 100%;
+        position: relative; }
+        .facilities .swiperFacilites .swiper-slide__containerImg__featuresIcon {
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+        .facilities .swiperFacilites .swiper-slide__containerImg__featuresNum {
+          position: absolute;
+          top: 0;
+          right: 0; }
+      .facilities .swiperFacilites .swiper-slide h3 {
+        letter-spacing: 0; }
+      .facilities .swiperFacilites .swiper-slide p {
+        padding-left: 0.35em;
+        width: 19em;
+        line-height: 1.75em;
+        margin: 0.8em 0 2em; }
+    .facilities .swiperFacilites .swiper-pagination {
+      height: 5em;
+      width: 10em;
+      bottom: -4em;
+      position: absolute;
+      left: 6.85em;
+      flex-direction: row; }
+    .facilities .swiperFacilites .swiper-pagination-bullet {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: #ededed;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s; }
+    .facilities .swiperFacilites .swiper-pagination-bullet-active {
+      background-color: #BEAD8E;
+      opacity: 1; }
+
 .nav {
   position: fixed;
   display: flex;
@@ -314,7 +520,8 @@ body {
     font-family: "Old Standard TT", serif;
     font-style: normal;
     font-size: 3.5em;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1em; }
   body h3 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
