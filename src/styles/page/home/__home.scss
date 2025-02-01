@@ -181,28 +181,28 @@
   
     h4 {
       color: $color_softyBrown;
-      margin-bottom: 1.5em;
+      padding-bottom: 2em;
     }
   
     h2 {
       color: #fff;
-      margin-bottom: 0.3em;
+      padding-bottom: 0.2em;
+    line-height: 1.1em;
     }
   
     p {
       color: $color_greyLetter;
-      padding: 0.5em;
+      padding: 0.5em 0 2em ;
     }
   
     iframe {
       width: 21em;
       height: 16.875em;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
     }
   
     button {
       @include generic_button;
-      padding-left: 4.3em;
-      padding-right: 4.3em;
+      margin-bottom: 1em;
     }
   }
