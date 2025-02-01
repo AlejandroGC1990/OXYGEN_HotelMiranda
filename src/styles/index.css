@@ -128,6 +128,11 @@
       font-weight: 700;
       font-size: 1em; }
 
+.header__buttonBlack {
+  background-color: transparent;
+  border: 0.125em solid #FFFFFF54;
+  margin: 2em 0 1em; }
+
 .reservationCalendar {
   background: #222222;
   margin-bottom: 3.8em;
@@ -165,11 +170,6 @@
     padding-bottom: 1.6em;
     width: 17em;
     width: 19em; }
-
-.header__buttonBlack {
-  background-color: transparent;
-  border: 0.125em solid #FFFFFF54;
-  margin: 2em 0 1em; }
 
 .aboutUs {
   padding: 0; }
