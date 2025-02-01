@@ -313,6 +313,70 @@
     width: 17em;
     margin-bottom: 1em; }
 
+.facilities {
+  padding-bottom: 3.5em;
+  padding-left: 0; }
+  .facilities h4 {
+    margin-top: 1.9em;
+    padding-bottom: 1.35em;
+    text-align: center; }
+  .facilities h2 {
+    font-size: 3.4em;
+    text-align: center;
+    margin-bottom: 0.5em; }
+  .facilities .swiperFacilites {
+    width: 23.4375em;
+    height: 23.125em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .facilities .swiperFacilites .swiper-slide {
+      width: 100%;
+      display: flex;
+      top: 0;
+      padding: 0 2.5em 0 1.5em;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .facilities .swiperFacilites .swiper-slide__containerImg {
+        padding: 4em 0;
+        margin: 1em 0 2em 0;
+        width: 100%;
+        position: relative; }
+        .facilities .swiperFacilites .swiper-slide__containerImg__featuresIcon {
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+        .facilities .swiperFacilites .swiper-slide__containerImg__featuresNum {
+          position: absolute;
+          top: 0;
+          right: 0; }
+      .facilities .swiperFacilites .swiper-slide h3 {
+        letter-spacing: 0; }
+      .facilities .swiperFacilites .swiper-slide p {
+        padding-left: 0.35em;
+        width: 19em;
+        line-height: 1.75em;
+        margin: 0.8em 0 2em; }
+    .facilities .swiperFacilites .swiper-pagination {
+      height: 5em;
+      width: 10em;
+      bottom: -4em;
+      position: absolute;
+      left: 6.85em;
+      flex-direction: row; }
+    .facilities .swiperFacilites .swiper-pagination-bullet {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: #ededed;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s; }
+    .facilities .swiperFacilites .swiper-pagination-bullet-active {
+      background-color: #BEAD8E;
+      opacity: 1; }
+
 .nav {
   position: fixed;
   display: flex;
