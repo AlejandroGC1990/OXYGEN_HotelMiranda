@@ -128,6 +128,11 @@
       font-weight: 700;
       font-size: 1em; }
 
+.header__buttonBlack {
+  background-color: transparent;
+  border: 0.125em solid #FFFFFF54;
+  margin: 2em 0 1em; }
+
 .reservationCalendar {
   background: #222222;
   margin-bottom: 3.8em;
@@ -165,11 +170,6 @@
     padding-bottom: 1.6em;
     width: 17em;
     width: 19em; }
-
-.header__buttonBlack {
-  background-color: transparent;
-  border: 0.125em solid #FFFFFF54;
-  margin: 2em 0 1em; }
 
 .aboutUs {
   padding: 0; }
@@ -288,7 +288,7 @@
 
 .introVideo {
   background-color: #222222;
-  padding: 4em 01em 2.2em 1em; }
+  padding: 4em 1em 2.2em 1em; }
   .introVideo h4 {
     color: #BEAD8E;
     padding-bottom: 2em; }
@@ -314,8 +314,9 @@
     margin-bottom: 1em; }
 
 .facilities {
-  padding-bottom: 3.5em;
-  padding-left: 0; }
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3.5em; }
   .facilities h4 {
     margin-top: 1.9em;
     padding-bottom: 1.35em;
@@ -363,7 +364,7 @@
       width: 10em;
       bottom: -4em;
       position: absolute;
-      left: 6.85em;
+      left: 5.5em;
       flex-direction: row; }
     .facilities .swiperFacilites .swiper-pagination-bullet {
       width: 0.5em;
@@ -376,6 +377,189 @@
     .facilities .swiperFacilites .swiper-pagination-bullet-active {
       background-color: #BEAD8E;
       opacity: 1; }
+
+.menu {
+  background-image: url(../assets/icon_menu.png);
+  background-repeat: no-repeat;
+  background-position: 17.9em 0em;
+  background-size: 7.1563em;
+  padding-top: 7.5em;
+  padding-bottom: 2.5em; }
+  .menu h2 {
+    margin-bottom: 0.2em; }
+  .menu .swiperMenu {
+    width: 20em;
+    display: flex;
+    flex-direction: column; }
+    .menu .swiperMenu__container {
+      width: 100%; }
+      .menu .swiperMenu__container__article {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .menu .swiperMenu__container__article__pack {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 1em;
+          align-items: center; }
+          .menu .swiperMenu__container__article__pack__text {
+            flex-direction: column;
+            padding-left: 1.5em;
+            padding-bottom: 0.5em; }
+            .menu .swiperMenu__container__article__pack__text h3 {
+              font-size: 1.5em;
+              line-height: 1em; }
+            .menu .swiperMenu__container__article__pack__text p {
+              font-size: 0.875em;
+              width: 13em; }
+    .menu .swiperMenu__containerButtons {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      padding: 1em 2.5em 5em;
+      align-self: flex-end; }
+      .menu .swiperMenu__containerButtons .swiper-button-prev,
+      .menu .swiperMenu__containerButtons .swiper-button-next {
+        width: 1em;
+        height: 1em; }
+    .menu .swiperMenu .swiper-button-prev:after,
+    .menu .swiperMenu .swiper-button-next:after {
+      display: none; }
+  .menu .swiperMenu2 {
+    position: relative;
+    padding-bottom: 0.5em; }
+    .menu .swiperMenu2 .swiper-slide {
+      display: flex;
+      top: 0;
+      flex-direction: column;
+      padding: 0 0em 1.5em 0em;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .menu .swiperMenu2 .swiper-pagination {
+      height: 5em;
+      width: 10em;
+      bottom: -4em;
+      position: absolute;
+      left: 5.75em;
+      flex-direction: row; }
+    .menu .swiperMenu2 .swiper-pagination-bullet {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: #ededed;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s; }
+    .menu .swiperMenu2 .swiper-pagination-bullet-active {
+      background-color: #BEAD8E;
+      opacity: 1; }
+
+.benefits {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0; }
+  .benefits__pack {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.5em; }
+    .benefits__pack img {
+      margin-bottom: 3em;
+      width: 4.875em;
+      height: 5em; }
+    .benefits__pack p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      color: #fff;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 300; }
+      .benefits__pack p span {
+        font-size: 3.75em;
+        font-weight: 700; }
+
+.contactUs {
+  padding: 1em 0 0 0; }
+  .contactUs__containerSection {
+    margin-top: 1.5em;
+    background-image: url("../assets/contactUs_backgroundImg.png");
+    padding: 2em 0 1em; }
+    .contactUs__containerSection__containerLogo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 3em; }
+      .contactUs__containerSection__containerLogo__H {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #BEAD8E;
+        color: #fff;
+        width: 2.5625em;
+        padding: 1.7em 2.5em;
+        margin-right: 1em; }
+        .contactUs__containerSection__containerLogo__H p {
+          font-weight: 700;
+          font-size: 2.5em; }
+      .contactUs__containerSection__containerLogo__name {
+        font-weight: 400;
+        font-size: 1.625em; }
+        .contactUs__containerSection__containerLogo__name span {
+          font-weight: 700; }
+    .contactUs__containerSection__paragraf {
+      color: #777777;
+      font-weight: 400;
+      font-size: 1em; }
+    .contactUs__containerSection__containerIcons {
+      margin: 2em 0 1em; }
+      .contactUs__containerSection__containerIcons__others {
+        border: 0.5em solid #f8f8f8; }
+      .contactUs__containerSection__containerIcons__X {
+        border: 0.5em solid #BEAD8E;
+        background-color: #BEAD8E; }
+    .contactUs__containerSection h3 {
+      font-weight: 400;
+      font-size: 1.5em;
+      margin-bottom: 0.5em; }
+    .contactUs__containerSection__services {
+      display: flex;
+      flex-direction: row;
+      padding-top: 1em; }
+      .contactUs__containerSection__services__service {
+        width: 50%; }
+        .contactUs__containerSection__services__service h4 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 100;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1em;
+          color: #C2C2C2;
+          font-size: 1em;
+          letter-spacing: 0;
+          width: 11.5em; }
+    .contactUs__containerSection__contact {
+      padding-top: 0.75em; }
+      .contactUs__containerSection__contact__pack {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2.8em; }
+        .contactUs__containerSection__contact__pack img {
+          width: 2.5em;
+          height: 2.5em; }
+        .contactUs__containerSection__contact__pack__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 1em; }
+          .contactUs__containerSection__contact__pack__text h3 {
+            line-height: 0;
+            margin: 1em 0 0.5em; }
 
 .nav {
   position: fixed;
