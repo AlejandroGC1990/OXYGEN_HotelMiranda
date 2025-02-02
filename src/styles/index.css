@@ -288,7 +288,7 @@
 
 .introVideo {
   background-color: #222222;
-  padding: 4em 01em 2.2em 1em; }
+  padding: 4em 1em 2.2em 1em; }
   .introVideo h4 {
     color: #BEAD8E;
     padding-bottom: 2em; }
@@ -314,8 +314,9 @@
     margin-bottom: 1em; }
 
 .facilities {
-  padding-bottom: 3.5em;
-  padding-left: 0; }
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3.5em; }
   .facilities h4 {
     margin-top: 1.9em;
     padding-bottom: 1.35em;
@@ -363,7 +364,7 @@
       width: 10em;
       bottom: -4em;
       position: absolute;
-      left: 6.85em;
+      left: 5.5em;
       flex-direction: row; }
     .facilities .swiperFacilites .swiper-pagination-bullet {
       width: 0.5em;
@@ -374,6 +375,83 @@
       border-radius: 50%;
       transition: background-color 0.3s; }
     .facilities .swiperFacilites .swiper-pagination-bullet-active {
+      background-color: #BEAD8E;
+      opacity: 1; }
+
+.menu {
+  background-image: url(../assets/icon_menu.png);
+  background-repeat: no-repeat;
+  background-position: 17.9em 0em;
+  background-size: 7.1563em;
+  padding-top: 7.5em;
+  padding-bottom: 2.5em; }
+  .menu h2 {
+    margin-bottom: 0.2em; }
+  .menu .swiperMenu {
+    width: 20em;
+    display: flex;
+    flex-direction: column; }
+    .menu .swiperMenu__container {
+      width: 100%; }
+      .menu .swiperMenu__container__article {
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .menu .swiperMenu__container__article__pack {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 1em;
+          align-items: center; }
+          .menu .swiperMenu__container__article__pack__text {
+            flex-direction: column;
+            padding-left: 1.5em;
+            padding-bottom: 0.5em; }
+            .menu .swiperMenu__container__article__pack__text h3 {
+              font-size: 1.5em;
+              line-height: 1em; }
+            .menu .swiperMenu__container__article__pack__text p {
+              font-size: 0.875em;
+              width: 13em; }
+    .menu .swiperMenu__containerButtons {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      padding: 1em 2.5em 5em;
+      align-self: flex-end; }
+      .menu .swiperMenu__containerButtons .swiper-button-prev,
+      .menu .swiperMenu__containerButtons .swiper-button-next {
+        width: 1em;
+        height: 1em; }
+    .menu .swiperMenu .swiper-button-prev:after,
+    .menu .swiperMenu .swiper-button-next:after {
+      display: none; }
+  .menu .swiperMenu2 {
+    position: relative;
+    padding-bottom: 0.5em; }
+    .menu .swiperMenu2 .swiper-slide {
+      display: flex;
+      top: 0;
+      flex-direction: column;
+      padding: 0 0em 1.5em 0em;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .menu .swiperMenu2 .swiper-pagination {
+      height: 5em;
+      width: 10em;
+      bottom: -4em;
+      position: absolute;
+      left: 5.75em;
+      flex-direction: row; }
+    .menu .swiperMenu2 .swiper-pagination-bullet {
+      width: 0.5em;
+      height: 0.5em;
+      background-color: #ededed;
+      opacity: 1;
+      margin: 0 5px;
+      border-radius: 50%;
+      transition: background-color 0.3s; }
+    .menu .swiperMenu2 .swiper-pagination-bullet-active {
       background-color: #BEAD8E;
       opacity: 1; }
 
