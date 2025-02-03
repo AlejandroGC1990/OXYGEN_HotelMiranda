@@ -96,11 +96,21 @@
       font-weight: 700; }
 
 .header {
-  position: relative; }
+  height: auto;
+  position: relative;
+  color: #fff;
+  padding: 8em 0em 3em 1.5em;
+  background-color: #333333; }
+  .header h4 {
+    margin-top: 1em;
+    line-height: 1.5em;
+    margin-bottom: 2.5em; }
+  .header h1 {
+    padding-bottom: 0.6em; }
   .header__locationWeb {
     background-color: #fff;
     padding: 1em;
-    width: 9.75em;
+    width: 9em;
     position: absolute;
     right: 1em;
     bottom: 0; }
@@ -111,7 +121,8 @@
       font-style: normal;
       font-variation-settings: "wdth" 100;
       text-align: center;
-      color: #222222; }
+      color: #222222;
+      font-size: 1em; }
       .header__locationWeb__p__span2 {
         color: #BEAD8E; }
 
@@ -131,9 +142,10 @@
 .header__buttonBlack {
   background-color: transparent;
   border: 0.125em solid #FFFFFF54;
-  margin: 2em 0 1em; }
+  margin: 2em 0 1.55em; }
 
 .reservationCalendar {
+  width: 100%;
   background: #222222;
   margin-bottom: 3.8em;
   padding: 2.4em 1em; }
@@ -166,8 +178,7 @@
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em;
     width: 19em; }
 
@@ -180,8 +191,6 @@
     margin-bottom: 45em; }
     .aboutUs__discover h4 {
       color: #777777; }
-    .aboutUs__discover h2 {
-      padding-bottom: 0.2em; }
     .aboutUs__discover p {
       margin-bottom: 1.8em; }
     .aboutUs__discover button {
@@ -189,8 +198,7 @@
       background-color: #BEAD8E;
       border: none;
       letter-spacing: 0.27em;
-      padding-top: 1.6em;
-      padding-bottom: 1.6em;
+      padding: 1.65em 0;
       width: 17em;
       padding-left: 4.3em;
       padding-right: 4.3em; }
@@ -243,10 +251,6 @@
   text-align: center;
   align-items: center;
   padding-left: 0; }
-  .rooms h4 {
-    padding-bottom: 1em; }
-  .rooms h2 {
-    padding-bottom: .4em; }
   .rooms img {
     margin-bottom: -3em;
     z-index: 1; }
@@ -267,8 +271,8 @@
   .rooms__article {
     background-color: #fff;
     padding: 1.5em 2em 0em;
-    margin-bottom: 4.3em;
-    margin-top: -1em;
+    margin-bottom: 3.5em;
+    margin-top: -1.5em;
     z-index: 1;
     position: relative; }
     .rooms__article h3 {
@@ -276,6 +280,7 @@
       font-weight: 400;
       letter-spacing: 0em;
       font-size: 1.75em;
+      padding-top: 0.25em;
       padding-bottom: 0.75em; }
     .rooms__article p {
       text-align: center;
@@ -284,21 +289,20 @@
     .rooms__article img {
       position: relative;
       z-index: 2;
-      margin-top: -5em; }
+      top: 0;
+      margin: 1.5em 0 0; }
 
 .introVideo {
   background-color: #222222;
   padding: 4em 1em 2.2em 1em; }
   .introVideo h4 {
-    color: #BEAD8E;
-    padding-bottom: 2em; }
+    color: #BEAD8E; }
   .introVideo h2 {
     color: #fff;
-    padding-bottom: 0.2em;
     line-height: 1.1em; }
   .introVideo p {
     color: #C2C2C2;
-    padding: 0.5em 0 2em; }
+    padding: 0 0 2em; }
   .introVideo iframe {
     width: 21em;
     height: 16.875em;
@@ -308,18 +312,16 @@
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em;
     margin-bottom: 1em; }
 
 .facilities {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3.5em; }
+  margin-bottom: 2em; }
   .facilities h4 {
     margin-top: 1.9em;
-    padding-bottom: 1.35em;
     text-align: center; }
   .facilities h2 {
     font-size: 3.4em;
@@ -327,7 +329,6 @@
     margin-bottom: 0.5em; }
   .facilities .swiperFacilites {
     width: 23.4375em;
-    height: 23.125em;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
@@ -335,7 +336,7 @@
       width: 100%;
       display: flex;
       top: 0;
-      padding: 0 2.5em 0 1.5em;
+      padding: 0 2.5em 1.75em 1.5em;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column; }
@@ -362,9 +363,9 @@
     .facilities .swiperFacilites .swiper-pagination {
       height: 5em;
       width: 10em;
-      bottom: -4em;
       position: absolute;
-      left: 5.5em;
+      left: 7em;
+      bottom: -4em;
       flex-direction: row; }
     .facilities .swiperFacilites .swiper-pagination-bullet {
       width: 0.5em;
@@ -379,16 +380,15 @@
       opacity: 1; }
 
 .menu {
+  width: 100%;
+  height: auto;
   background-image: url(../assets/icon_menu.png);
   background-repeat: no-repeat;
-  background-position: 17.9em 0em;
+  background-position: 110% 0%;
   background-size: 7.1563em;
-  padding-top: 7.5em;
-  padding-bottom: 2.5em; }
-  .menu h2 {
-    margin-bottom: 0.2em; }
+  padding-top: 8em; }
   .menu .swiperMenu {
-    width: 20em;
+    width: 100%;
     display: flex;
     flex-direction: column; }
     .menu .swiperMenu__container {
@@ -561,122 +561,8 @@
             line-height: 0;
             margin: 1em 0 0.5em; }
 
-.nav {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  top: 0em;
-  background-color: #fff;
-  height: 4.37em;
-  z-index: 5; }
-  .nav__container {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    box-shadow: 0px 3px 6px 0px #0000004a;
-    z-index: 5; }
-    .nav__container__select {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 2em 0 1em;
-      height: 100%; }
-      .nav__container__select button {
-        background: none;
-        border: none;
-        width: 1.25em;
-        height: 0.8em;
-        cursor: pointer; }
-        .nav__container__select button img {
-          width: 100%;
-          height: auto; }
-      .nav__container__select__burger {
-        display: block;
-        padding: 0; }
-        .nav__container__select__burger.close {
-          display: none; }
-      .nav__container__select__close {
-        display: none; }
-        .nav__container__select__close.open {
-          display: block; }
-    .nav__container__logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0.5em 0 0 0em; }
-      .nav__container__logo__H {
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 14px 24px 0px #8b8b8b40;
-        padding: 0em; }
-      .nav__container__logo img {
-        padding: 0.52em 0.77em; }
-    .nav__container__containerIcons {
-      display: flex;
-      padding: 0 1em 0 5em;
-      margin: 0.4em 0 0 0em; }
-      .nav__container__containerIcons a {
-        display: flex;
-        align-items: center;
-        padding: 0 0.5em; }
-        .nav__container__containerIcons a__icons {
-          width: 1.5em;
-          height: auto; }
-  .nav__containerMenu {
-    position: relative; }
-    .nav__containerMenu__menu {
-      display: none;
-      position: absolute;
-      background-color: #fff;
-      width: 100%;
-      padding: 1em 1.5em; }
-      .nav__containerMenu__menu.open {
-        display: block; }
-    .nav__containerMenu li {
-      padding: 0.2em 0;
-      display: flex;
-      flex-direction: column;
-      font-size: 1em;
-      font-weight: 600;
-      line-height: 2em;
-      text-align: left;
-      list-style-type: none; }
-      .nav__containerMenu li a {
-        font-family: "Archivo", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-        font-weight: bold;
-        text-decoration: none;
-        color: black; }
-    .nav__containerMenu li:hover {
-      color: black;
-      font-weight: 700; }
-
-.header {
-  position: relative; }
-  .header__locationWeb {
-    background-color: #fff;
-    padding: 1em;
-    width: 9.75em;
-    position: absolute;
-    right: 1em;
-    bottom: 0; }
-    .header__locationWeb__p {
-      font-family: "Archivo", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 100;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-      text-align: center;
-      color: #222222; }
-      .header__locationWeb__p__span2 {
-        color: #BEAD8E; }
+.presentation iframe {
+  margin-top: 1.2em; }
 
 html,
 * {
@@ -698,14 +584,14 @@ body {
     font-style: normal;
     font-size: 3.5em;
     font-weight: 400;
-    color: #fff;
-    padding-bottom: 0.5em; }
+    color: #fff; }
   body h2 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
     font-size: 3.5em;
     font-weight: 400;
-    line-height: 1em; }
+    line-height: 1em;
+    margin-bottom: 1em; }
   body h3 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -724,8 +610,6 @@ body {
     font-weight: 600;
     font-size: 0.813em;
     letter-spacing: 0.2em;
-    line-height: 1.5em;
-    padding-bottom: 3em;
     letter-spacing: 0.275em; }
   body p {
     font-family: "Archivo", sans-serif;
@@ -738,21 +622,28 @@ body {
     font-weight: 400;
     line-height: 24px;
     text-align: left; }
-  body header {
-    color: #fff;
-    padding: 8em 0em 3.7em 1.5em;
-    background-color: #333333; }
   body main {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     body main section {
-      padding: 2.5em 1.2em; }
+      width: 100%;
+      padding: 2em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main section h4 {
+        margin-bottom: 2.5em; }
+      body main section h2 {
+        margin-bottom: 0.5em; }
   body button {
     color: #fff;
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em; }
 
 /*# sourceMappingURL=index.css.map */

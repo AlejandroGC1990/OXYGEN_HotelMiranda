@@ -4,12 +4,26 @@
 @import "../__mixin";
 
 .header {
+  height: auto;
   position: relative;
+  color: #fff;
+  padding: 8em 0em 3em 1.5em;
+  background-color: $color_header;
+
+  h4 {
+    margin-top: 1em;
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+  }
+
+  h1{
+    padding-bottom: 0.6em;
+  }
   
   &__locationWeb {
     background-color: #fff;
     padding: 1em;
-    width: 9.75em;
+    width: 9em;
     position: absolute;
     right: 1em;
     bottom: 0;
@@ -18,6 +32,7 @@
         @include archivo-font;
         text-align: center;
         color: $color_black;
+        font-size: 1em;
       &__span2 {
         color: $color_softyBrown;
       }
