@@ -99,12 +99,12 @@
   height: auto;
   position: relative;
   color: #fff;
-  padding: 8em 0em 3.7em 1.5em;
+  padding: 8em 0em 3em 1.5em;
   background-color: #333333; }
   .header h4 {
     margin-top: 1em;
     line-height: 1.5em;
-    padding-bottom: 1em; }
+    margin-bottom: 2.5em; }
   .header h1 {
     padding-bottom: 0.6em; }
   .header__locationWeb {
@@ -142,9 +142,10 @@
 .header__buttonBlack {
   background-color: transparent;
   border: 0.125em solid #FFFFFF54;
-  margin: 2em 0 1em; }
+  margin: 2em 0 1.55em; }
 
 .reservationCalendar {
+  width: 100%;
   background: #222222;
   margin-bottom: 3.8em;
   padding: 2.4em 1em; }
@@ -177,8 +178,7 @@
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em;
     width: 19em; }
 
@@ -191,8 +191,6 @@
     margin-bottom: 45em; }
     .aboutUs__discover h4 {
       color: #777777; }
-    .aboutUs__discover h2 {
-      padding-bottom: 0.2em; }
     .aboutUs__discover p {
       margin-bottom: 1.8em; }
     .aboutUs__discover button {
@@ -200,8 +198,7 @@
       background-color: #BEAD8E;
       border: none;
       letter-spacing: 0.27em;
-      padding-top: 1.6em;
-      padding-bottom: 1.6em;
+      padding: 1.65em 0;
       width: 17em;
       padding-left: 4.3em;
       padding-right: 4.3em; }
@@ -254,10 +251,6 @@
   text-align: center;
   align-items: center;
   padding-left: 0; }
-  .rooms h4 {
-    padding-bottom: 1em; }
-  .rooms h2 {
-    padding-bottom: .4em; }
   .rooms img {
     margin-bottom: -3em;
     z-index: 1; }
@@ -278,8 +271,8 @@
   .rooms__article {
     background-color: #fff;
     padding: 1.5em 2em 0em;
-    margin-bottom: 4.3em;
-    margin-top: -1em;
+    margin-bottom: 3.5em;
+    margin-top: -1.5em;
     z-index: 1;
     position: relative; }
     .rooms__article h3 {
@@ -287,6 +280,7 @@
       font-weight: 400;
       letter-spacing: 0em;
       font-size: 1.75em;
+      padding-top: 0.25em;
       padding-bottom: 0.75em; }
     .rooms__article p {
       text-align: center;
@@ -295,21 +289,20 @@
     .rooms__article img {
       position: relative;
       z-index: 2;
-      margin-top: -5em; }
+      top: 0;
+      margin: 1.5em 0 0; }
 
 .introVideo {
   background-color: #222222;
   padding: 4em 1em 2.2em 1em; }
   .introVideo h4 {
-    color: #BEAD8E;
-    padding-bottom: 2em; }
+    color: #BEAD8E; }
   .introVideo h2 {
     color: #fff;
-    padding-bottom: 0.2em;
     line-height: 1.1em; }
   .introVideo p {
     color: #C2C2C2;
-    padding: 0.5em 0 2em; }
+    padding: 0 0 2em; }
   .introVideo iframe {
     width: 21em;
     height: 16.875em;
@@ -319,18 +312,16 @@
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em;
     margin-bottom: 1em; }
 
 .facilities {
   display: flex;
   flex-direction: column;
-  padding-bottom: 3.5em; }
+  margin-bottom: 5em; }
   .facilities h4 {
     margin-top: 1.9em;
-    padding-bottom: 1.35em;
     text-align: center; }
   .facilities h2 {
     font-size: 3.4em;
@@ -338,7 +329,6 @@
     margin-bottom: 0.5em; }
   .facilities .swiperFacilites {
     width: 23.4375em;
-    height: 23.125em;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
@@ -346,7 +336,7 @@
       width: 100%;
       display: flex;
       top: 0;
-      padding: 0 2.5em 0 1.5em;
+      padding: 0 2.5em 1.75em 1.5em;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column; }
@@ -373,9 +363,9 @@
     .facilities .swiperFacilites .swiper-pagination {
       height: 5em;
       width: 10em;
-      bottom: -4em;
       position: absolute;
-      left: 5.5em;
+      left: 7em;
+      bottom: -4em;
       flex-direction: row; }
     .facilities .swiperFacilites .swiper-pagination-bullet {
       width: 0.5em;
@@ -390,13 +380,9 @@
       opacity: 1; }
 
 .menu {
-  background-image: url(../assets/icon_menu.png);
-  background-repeat: no-repeat;
-  background-position: 17.9em 0em;
-  background-size: 7.1563em;
-  padding-top: 7.5em;
-  padding-bottom: 2.5em; }
+  background-color: #7272d1; }
   .menu h2 {
+    background-color: green;
     margin-bottom: 0.2em; }
   .menu .swiperMenu {
     width: 20em;
@@ -572,6 +558,9 @@
             line-height: 0;
             margin: 1em 0 0.5em; }
 
+.presentation iframe {
+  margin-top: 1.2em; }
+
 html,
 * {
   box-sizing: border-box;
@@ -592,14 +581,14 @@ body {
     font-style: normal;
     font-size: 3.5em;
     font-weight: 400;
-    color: #fff;
-    padding-bottom: 0.5em; }
+    color: #fff; }
   body h2 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
     font-size: 3.5em;
     font-weight: 400;
-    line-height: 1em; }
+    line-height: 1em;
+    margin-bottom: 1em; }
   body h3 {
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -631,16 +620,23 @@ body {
     line-height: 24px;
     text-align: left; }
   body main {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     body main section {
-      padding: 2.5em 1.2em; }
+      padding-top: 2em; }
+      body main section h4 {
+        margin-bottom: 2.5em; }
+      body main section h2 {
+        margin-bottom: 0.5em; }
   body button {
     color: #fff;
     background-color: #BEAD8E;
     border: none;
     letter-spacing: 0.27em;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
+    padding: 1.65em 0;
     width: 17em; }
 
 /*# sourceMappingURL=index.css.map */
