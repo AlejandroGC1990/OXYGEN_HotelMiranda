@@ -221,6 +221,9 @@
       .aboutUs__containerCards__card img {
         width: 4.5em;
         margin-bottom: 1em; }
+      .aboutUs__containerCards__card h3 {
+        font-weight: 100;
+        font-size: 28px; }
       .aboutUs__containerCards__card p {
         text-align: center;
         width: 15em; }
@@ -355,7 +358,8 @@
           top: 0;
           right: 0; }
       .facilities .swiperFacilites .swiper-slide h3 {
-        letter-spacing: 0; }
+        letter-spacing: 0;
+        font-size: 32px; }
       .facilities .swiperFacilites .swiper-slide p {
         padding-left: 0.35em;
         width: 19em;
