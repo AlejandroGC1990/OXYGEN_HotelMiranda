@@ -569,10 +569,15 @@
   align-items: center;
   text-align: center; }
   .presentation iframe {
-    margin-top: 1.2em; }
+    width: 335px;
+    width: 21em;
+    height: 12em;
+    margin-top: 1.3em;
+    margin-bottom: 1.9em; }
   .presentation__title {
     line-height: 39.55px;
-    letter-spacing: 0.005em; }
+    letter-spacing: 0.005em;
+    margin-bottom: 1.9em; }
   .presentation__container {
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -585,6 +590,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      .presentation__container__pack img {
+        margin-bottom: 0.5em; }
 
 html,
 * {

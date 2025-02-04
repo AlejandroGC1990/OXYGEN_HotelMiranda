@@ -8,12 +8,17 @@
     text-align: center;
 
     iframe {
-        margin-top: 1.2em;
+        width: 335px;
+        width: 21em;
+        height: 12em;
+        margin-top: 1.3em;
+        margin-bottom: 1.9em;
     }
 
     &__title {
         line-height: 39.55px;
         letter-spacing: 0.005em;
+        margin-bottom: 1.9em;
     }
 
     &__container {
@@ -29,6 +34,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            img{
+                margin-bottom: 0.5em;
+            }
         }
     }
+}
+
+.restaurant{
+    
 }
