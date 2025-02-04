@@ -19,15 +19,16 @@
         line-height: 39.55px;
         letter-spacing: 0.005em;
         margin-bottom: 1.9em;
+        text-align: center;
     }
 
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(2, 150px); 
+        grid-template-rows: repeat(2, 150px);
         gap: 1em;
 
-        &__pack{
+        &__pack {
             width: 10em;
             height: 10em;
             display: flex;
@@ -35,13 +36,22 @@
             justify-content: center;
             align-items: center;
 
-            img{
+            img {
                 margin-bottom: 0.5em;
             }
+            
+            &:nth-child(2) {
+                background-color: #bead8e;
+    
+                /* Fondo específico */
+                p {
+                    color: white;
+                    /* Texto en blanco */
+                }
+            }
         }
+
     }
 }
 
-.restaurant{
-    
-}
+.restaurant {}

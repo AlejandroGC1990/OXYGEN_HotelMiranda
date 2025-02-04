@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .nav {
   position: fixed;
   display: flex;
@@ -577,7 +578,8 @@
   .presentation__title {
     line-height: 39.55px;
     letter-spacing: 0.005em;
-    margin-bottom: 1.9em; }
+    margin-bottom: 1.9em;
+    text-align: center; }
   .presentation__container {
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -592,6 +594,12 @@
       align-items: center; }
       .presentation__container__pack img {
         margin-bottom: 0.5em; }
+      .presentation__container__pack:nth-child(2) {
+        background-color: #bead8e;
+        /* Fondo específico */ }
+        .presentation__container__pack:nth-child(2) p {
+          color: white;
+          /* Texto en blanco */ }
 
 html,
 * {
