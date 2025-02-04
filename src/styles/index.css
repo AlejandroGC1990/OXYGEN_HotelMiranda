@@ -99,6 +99,7 @@
   height: auto;
   position: relative;
   color: #fff;
+  width: 100%;
   padding: 8em 0em 3em 1.5em;
   background-color: #333333; }
   .header h4 {
@@ -561,8 +562,29 @@
             line-height: 0;
             margin: 1em 0 0.5em; }
 
-.presentation iframe {
-  margin-top: 1.2em; }
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .presentation iframe {
+    margin-top: 1.2em; }
+  .presentation__title {
+    line-height: 39.55px;
+    letter-spacing: 0.005em; }
+  .presentation__container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 1em; }
+    .presentation__container__pack {
+      width: 10em;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 
 html,
 * {

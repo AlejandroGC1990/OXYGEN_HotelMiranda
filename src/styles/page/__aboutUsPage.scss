@@ -1,7 +1,34 @@
 @import "../__variables";
- 
-.presentation{
-    iframe{
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    iframe {
         margin-top: 1.2em;
+    }
+
+    &__title {
+        line-height: 39.55px;
+        letter-spacing: 0.005em;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 150px); 
+        gap: 1em;
+
+        &__pack{
+            width: 10em;
+            height: 10em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
