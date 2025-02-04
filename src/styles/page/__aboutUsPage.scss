@@ -1,10 +1,6 @@
 @import "../__variables";
 
 .presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 
     iframe {
@@ -16,10 +12,10 @@
     }
 
     &__title {
-        line-height: 39.55px;
-        letter-spacing: 0.005em;
+        line-height: 1.25em;
         margin-bottom: 1.9em;
         text-align: center;
+        font-size: 31px;
     }
 
     &__container {
@@ -43,10 +39,8 @@
             &:nth-child(2) {
                 background-color: #bead8e;
     
-                /* Fondo específico */
                 p {
                     color: white;
-                    /* Texto en blanco */
                 }
             }
         }
@@ -54,4 +48,11 @@
     }
 }
 
-.restaurant {}
+.restaurant {
+    padding: 0em 2em;
+ 
+    img{
+        height: 14.5em;
+        margin-bottom: 2em;
+    }   
+}
