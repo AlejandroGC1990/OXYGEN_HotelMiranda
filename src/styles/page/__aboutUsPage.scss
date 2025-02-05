@@ -56,10 +56,14 @@
     }   
 }
 
-// .facilities{
-//     // background-color: $color_black;
+.facilitiesAboutUs{
+    background-color: $color_black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4em;
 
-//     h4, h3, h2{
-//         color: #fff;
-//     }
-// }
+    h4, h3, h2{
+        color: #fff;
+    }
+}

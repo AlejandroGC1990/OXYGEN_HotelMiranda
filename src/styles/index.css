@@ -230,8 +230,9 @@
 
 .swiperFacilites {
   width: 23.4375em;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center; }
   .swiperFacilites .swiper-slide {
     width: 100%;
@@ -266,7 +267,7 @@
     height: 5em;
     width: 10em;
     position: absolute;
-    left: 7em;
+    left: 5.5em;
     bottom: -4em;
     flex-direction: row; }
   .swiperFacilites .swiper-pagination-bullet {
@@ -617,6 +618,15 @@
   .restaurant img {
     height: 14.5em;
     margin-bottom: 2em; }
+
+.facilitiesAboutUs {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 4em; }
+  .facilitiesAboutUs h4, .facilitiesAboutUs h3, .facilitiesAboutUs h2 {
+    color: #fff; }
 
 html,
 * {
