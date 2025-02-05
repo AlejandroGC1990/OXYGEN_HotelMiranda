@@ -4,6 +4,7 @@
 @import "./components/__header";
 @import "./components/__contactUs";
 @import "./components/__footer";
+@import "./components/__swiperFacilities";
 @import "./page/_home";
 @import "./page/_aboutUsPage";
 @import "./page/rooms/_roomsPage";
@@ -90,20 +91,21 @@ body {
         color: $color_greyLetter;
       }
 
-        h3{
-          font-size: 40px;
-          font-weight:400;
-          text-align: left;
-          line-height: 1.25em;
-          letter-spacing: 0em;
-          word-spacing: 0em;
-          margin-bottom: 0.7em;
-        }
-        
-        h2 {
-          margin-bottom: 0.5em;
+      h3 {
+        font-size: 40px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 1.25em;
+        letter-spacing: 0em;
+        word-spacing: 0em;
+        margin-bottom: 0.7em;
       }
-      p{
+
+      h2 {
+        margin-bottom: 0.5em;
+      }
+
+      p {
         margin-bottom: 1em
       }
     }

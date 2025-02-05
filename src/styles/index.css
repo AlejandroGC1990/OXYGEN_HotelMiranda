@@ -228,6 +228,59 @@
       font-size: 1em;
       color: #222222; }
 
+.swiperFacilites {
+  width: 23.4375em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .swiperFacilites .swiper-slide {
+    width: 100%;
+    display: flex;
+    top: 0;
+    padding: 0 2.5em 1.75em 1.5em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; }
+    .swiperFacilites .swiper-slide__containerImg {
+      padding: 4em 0;
+      margin: 1em 0 2em 0;
+      width: 100%;
+      position: relative; }
+      .swiperFacilites .swiper-slide__containerImg__featuresIcon {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .swiperFacilites .swiper-slide__containerImg__featuresNum {
+        position: absolute;
+        top: 0;
+        right: 0; }
+    .swiperFacilites .swiper-slide h3 {
+      letter-spacing: 0;
+      font-size: 32px; }
+    .swiperFacilites .swiper-slide p {
+      padding-left: 0.35em;
+      width: 19em;
+      line-height: 1.75em;
+      margin: 0.8em 0 2em; }
+  .swiperFacilites .swiper-pagination {
+    height: 5em;
+    width: 10em;
+    position: absolute;
+    left: 7em;
+    bottom: -4em;
+    flex-direction: row; }
+  .swiperFacilites .swiper-pagination-bullet {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #ededed;
+    opacity: 1;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s; }
+  .swiperFacilites .swiper-pagination-bullet-active {
+    background-color: #BEAD8E;
+    opacity: 1; }
+
 .header__buttonBlack {
   background-color: transparent;
   border: 0.125em solid #FFFFFF54;
@@ -412,7 +465,8 @@
 .facilities {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  background-color: #fff; }
   .facilities h4 {
     margin-top: 1.9em;
     text-align: center; }
@@ -420,58 +474,6 @@
     font-size: 3.4em;
     text-align: center;
     margin-bottom: 0.5em; }
-  .facilities .swiperFacilites {
-    width: 23.4375em;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .facilities .swiperFacilites .swiper-slide {
-      width: 100%;
-      display: flex;
-      top: 0;
-      padding: 0 2.5em 1.75em 1.5em;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column; }
-      .facilities .swiperFacilites .swiper-slide__containerImg {
-        padding: 4em 0;
-        margin: 1em 0 2em 0;
-        width: 100%;
-        position: relative; }
-        .facilities .swiperFacilites .swiper-slide__containerImg__featuresIcon {
-          position: absolute;
-          bottom: 0;
-          left: 0; }
-        .facilities .swiperFacilites .swiper-slide__containerImg__featuresNum {
-          position: absolute;
-          top: 0;
-          right: 0; }
-      .facilities .swiperFacilites .swiper-slide h3 {
-        letter-spacing: 0;
-        font-size: 32px; }
-      .facilities .swiperFacilites .swiper-slide p {
-        padding-left: 0.35em;
-        width: 19em;
-        line-height: 1.75em;
-        margin: 0.8em 0 2em; }
-    .facilities .swiperFacilites .swiper-pagination {
-      height: 5em;
-      width: 10em;
-      position: absolute;
-      left: 7em;
-      bottom: -4em;
-      flex-direction: row; }
-    .facilities .swiperFacilites .swiper-pagination-bullet {
-      width: 0.5em;
-      height: 0.5em;
-      background-color: #ededed;
-      opacity: 1;
-      margin: 0 5px;
-      border-radius: 50%;
-      transition: background-color 0.3s; }
-    .facilities .swiperFacilites .swiper-pagination-bullet-active {
-      background-color: #BEAD8E;
-      opacity: 1; }
 
 .menu {
   width: 100%;
@@ -611,7 +613,7 @@
           color: white; }
 
 .restaurant {
-  padding: 0em 2em; }
+  padding: 0em 2em 5em; }
   .restaurant img {
     height: 14.5em;
     margin-bottom: 2em; }
