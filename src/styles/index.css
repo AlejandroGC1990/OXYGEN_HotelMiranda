@@ -625,8 +625,42 @@
   justify-content: center;
   text-align: center;
   padding-bottom: 4em; }
-  .facilitiesAboutUs h4, .facilitiesAboutUs h3, .facilitiesAboutUs h2 {
+  .facilitiesAboutUs h4,
+  .facilitiesAboutUs h3,
+  .facilitiesAboutUs h2 {
     color: #fff; }
+
+.counter {
+  width: 100%;
+  padding: 4em 1em 0em;
+  display: flex;
+  flex-direction: column; }
+  .counter__container {
+    width: 100%;
+    height: 5em;
+    padding: 1em  1em 0em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .counter__container__icon {
+      width: 4em;
+      height: 4em; }
+    .counter__container__pack {
+      height: 100%; }
+      .counter__container__pack h3 {
+        font-size: 3.75em;
+        line-height: 1em;
+        padding: 0;
+        margin: 0; }
+      .counter__container__pack p {
+        font-size: 1em;
+        padding: 0;
+        margin: 0; }
+    .counter__container__arrow {
+      width: 2em;
+      height: 1em; }
 
 html,
 * {
@@ -700,8 +734,9 @@ body {
       flex-direction: column;
       justify-content: center; }
       body main section h4 {
+        font-size: 0.913em;
         margin-bottom: 2.5em;
-        color: #C2C2C2; }
+        color: #777777; }
       body main section h3 {
         font-size: 40px;
         font-weight: 400;
