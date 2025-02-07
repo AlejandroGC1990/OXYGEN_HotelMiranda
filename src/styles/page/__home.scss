@@ -138,7 +138,7 @@
   }
 }
 
-.homeRooms {
+.rooms {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -157,7 +157,7 @@
     overflow: hidden;
 
     .swiper-slide {
-      background-color: grey;
+      background-color: $color_softyGrey;
     }
 
     .swiper-button-prev,

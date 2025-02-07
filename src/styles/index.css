@@ -282,54 +282,6 @@
     background-color: #BEAD8E;
     opacity: 1; }
 
-.rooms {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding-left: 0; }
-  .rooms img {
-    margin-bottom: -3em;
-    z-index: 1; }
-  .rooms .swiperRooms {
-    z-index: 0;
-    width: 23.4375em;
-    height: 15.25em;
-    overflow: hidden; }
-    .rooms .swiperRooms .swiper-slide {
-      background-color: grey; }
-    .rooms .swiperRooms .swiper-button-prev,
-    .rooms .swiperRooms .swiper-button-next {
-      width: 2em;
-      height: 2em; }
-    .rooms .swiperRooms .swiper-button-prev:after,
-    .rooms .swiperRooms .swiper-button-next:after {
-      display: none; }
-    .rooms .swiperRooms__article {
-      background-color: #fff;
-      padding: 1.5em 2em 0em;
-      margin-bottom: 3.5em;
-      margin-top: -1.5em;
-      margin-left: 1em;
-      z-index: 1;
-      position: relative; }
-      .rooms .swiperRooms__article h3 {
-        line-height: 0.5em;
-        font-weight: 400;
-        letter-spacing: 0em;
-        font-size: 1.75em;
-        padding-top: 0.25em;
-        padding-bottom: 0.75em; }
-      .rooms .swiperRooms__article p {
-        text-align: center;
-        width: 18em;
-        padding: 0; }
-      .rooms .swiperRooms__article img {
-        position: relative;
-        z-index: 2;
-        top: 0;
-        margin: 1.5em 0 0; }
-
 .header__buttonBlack {
   background-color: transparent;
   border: 0.125em solid #FFFFFF54;
@@ -439,30 +391,30 @@
         .aboutUs__containerCards__card__data2 img {
           width: 2.92em; }
 
-.homeRooms {
+.rooms {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding-left: 0; }
-  .homeRooms img {
+  .rooms img {
     margin-bottom: -3em;
     z-index: 1; }
-  .homeRooms .swiperRooms {
+  .rooms .swiperRooms {
     z-index: 0;
     width: 23.4375em;
     height: 15.25em;
     overflow: hidden; }
-    .homeRooms .swiperRooms .swiper-slide {
-      background-color: grey; }
-    .homeRooms .swiperRooms .swiper-button-prev,
-    .homeRooms .swiperRooms .swiper-button-next {
+    .rooms .swiperRooms .swiper-slide {
+      background-color: #E9E9E9; }
+    .rooms .swiperRooms .swiper-button-prev,
+    .rooms .swiperRooms .swiper-button-next {
       width: 2em;
       height: 2em; }
-    .homeRooms .swiperRooms .swiper-button-prev:after,
-    .homeRooms .swiperRooms .swiper-button-next:after {
+    .rooms .swiperRooms .swiper-button-prev:after,
+    .rooms .swiperRooms .swiper-button-next:after {
       display: none; }
-  .homeRooms__article {
+  .rooms__article {
     background-color: #fff;
     padding: 1.5em 2em 0em;
     margin-bottom: 3.5em;
@@ -470,18 +422,18 @@
     margin-left: 1em;
     z-index: 1;
     position: relative; }
-    .homeRooms__article h3 {
+    .rooms__article h3 {
       line-height: 0.5em;
       font-weight: 400;
       letter-spacing: 0em;
       font-size: 1.75em;
       padding-top: 0.25em;
       padding-bottom: 0.75em; }
-    .homeRooms__article p {
+    .rooms__article p {
       text-align: center;
       width: 18em;
       padding: 0; }
-    .homeRooms__article img {
+    .rooms__article img {
       position: relative;
       z-index: 2;
       top: 0;
@@ -709,6 +661,48 @@
     .counter__container__arrow {
       width: 2em;
       height: 1em; }
+
+.roomsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0; }
+  .roomsPage__article {
+    background-color: #fff;
+    margin-bottom: 2.5em;
+    margin-top: -1.5em;
+    margin-left: 1em;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .roomsPage__article__carousel {
+      margin-top: -2em;
+      z-index: 1; }
+    .roomsPage__article h3 {
+      text-align: center;
+      line-height: 0.5em;
+      font-weight: 400;
+      letter-spacing: 0em;
+      font-size: 1.3em;
+      padding-top: 0.25em; }
+    .roomsPage__article p {
+      text-align: center;
+      width: 20em; }
+    .roomsPage__article__priceAndBooking {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .roomsPage__article__priceAndBooking h4 {
+        letter-spacing: 0em; }
+      .roomsPage__article__priceAndBooking__price {
+        color: #BEAD8E;
+        margin-right: 1em; }
+      .roomsPage__article__priceAndBooking__booking {
+        color: #C2C2C2; }
 
 html,
 * {
