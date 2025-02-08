@@ -1,0 +1,67 @@
+// .rooms {
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     align-items: center;
+//     padding-left: 0;
+
+//     img {
+//         margin-bottom: -3em;
+//         z-index: 1;
+//     }
+
+//     .swiperRooms {
+//         z-index: 0;
+//         width: 23.4375em;
+//         height: 15.25em;
+//         overflow: hidden;
+
+//         .swiper-slide {
+//             background-color: grey;
+//         }
+
+//         .swiper-button-prev,
+//         .swiper-button-next {
+//             width: 2em;
+//             height: 2em;
+//         }
+
+//         .swiper-button-prev:after,
+//         .swiper-button-next:after {
+//             display: none;
+//         }
+
+//     }
+    
+//     &__article {
+//         background-color: #d61111;
+//         padding: 1.5em 2em 0em;
+//         margin-bottom: 3.5em;
+//         margin-top: -1.5em;
+//         margin-left: 1em;
+//         z-index: 1;
+//         position: relative;
+
+//         h3 {
+//             line-height: 0.5em;
+//             font-weight: 400;
+//             letter-spacing: 0em;
+//             font-size: 1.75em;
+//             padding-top: 0.25em;
+//             padding-bottom: 0.75em;
+//         }
+
+//         p {
+//             text-align: center;
+//             width: 18em;
+//             padding: 0;
+//         }
+
+//         img {
+//             position: relative;
+//             z-index: 2;
+//             top: 0;
+//             margin: 1.5em 0 0;
+//         }
+//     }
+// }
