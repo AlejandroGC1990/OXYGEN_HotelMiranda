@@ -111,9 +111,8 @@
   .header__locationWeb {
     background-color: #fff;
     padding: 1em;
-    width: 9em;
     position: absolute;
-    right: 1em;
+    right: 1.25em;
     bottom: 0; }
     .header__locationWeb__p {
       font-family: "Archivo", sans-serif;
