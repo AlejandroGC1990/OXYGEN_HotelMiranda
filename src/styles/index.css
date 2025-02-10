@@ -111,9 +111,8 @@
   .header__locationWeb {
     background-color: #fff;
     padding: 1em;
-    width: 9em;
     position: absolute;
-    right: 1em;
+    right: 1.25em;
     bottom: 0; }
     .header__locationWeb__p {
       font-family: "Archivo", sans-serif;
@@ -304,18 +303,20 @@
       font-weight: 500;
       font-size: 0.9em;
       padding-bottom: 0.8em; }
-    .reservationCalendar__pack input {
-      width: 25em;
-      padding: 1em 1.7em;
-      background-color: transparent;
+    .reservationCalendar__pack__date {
+      display: flex;
+      flex-direction: row;
+      width: 99%;
+      margin: 1em auto 0;
       outline: none;
       border: none;
       border-bottom: 2px solid #BEAD8E; }
-    .reservationCalendar__pack img {
-      position: absolute;
-      width: 15.07px;
-      height: 1em;
-      margin: 2.4em 0em 0em 0; }
+      .reservationCalendar__pack__date img {
+        position: absolute;
+        width: 1em;
+        height: 1em; }
+      .reservationCalendar__pack__date p {
+        padding-left: 2em; }
   .reservationCalendar button {
     color: #fff;
     background-color: #BEAD8E;
@@ -666,7 +667,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-top: 5em; }
   .roomsPage__article {
     background-color: #fff;
     margin-bottom: 2.5em;

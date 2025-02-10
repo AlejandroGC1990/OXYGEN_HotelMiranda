@@ -83,13 +83,17 @@
         <form>
           <div class="reservationCalendar__pack">
             <label for="arrival">Arrival Date</label>
-            <img src="./src/assets/icon_calendar.png" />
-            <input id="arrival" placeholder="Select arrival date" />
+            <div class="reservationCalendar__pack__date">
+              <img src="./src/assets/icon_calendar.png" />
+              <p id="currentDate">. . .</p>
+            </div>
           </div>
           <div class="reservationCalendar__pack">
             <label for="departure">LeDeparture Date</label>
-            <img src="./src/assets/icon_calendar.png" />
-            <input id="departure" placeholder="Select departure date" />
+            <div class="reservationCalendar__pack__date">
+              <img src="./src/assets/icon_calendar.png" />
+              <p id="futureDate">. . .</p>
+            </div>
           </div>
           <button>CHECK AVAILABILITY</button>
         </form>
@@ -537,6 +541,7 @@
     </main>
 
     <script src="./src/scripts/components/nav.js"></script>
+    <script src="./src/scripts/components/form/form_getDate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/scripts/sliceSwiper/slicerSwiperArrowRooms.js"></script>
     <script src="./src/scripts/sliceSwiper/slicerSwiperPounts.js"></script>
