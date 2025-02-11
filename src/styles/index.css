@@ -706,6 +706,17 @@
       .roomsPage__article__priceAndBooking__booking {
         color: #C2C2C2; }
 
+.roomsPresentation {
+  justify-content: flex-start; }
+  .roomsPresentation h4 {
+    margin-bottom: 1em; }
+  .roomsPresentation h3 {
+    font-size: 2.4em; }
+  .roomsPresentation p {
+    color: #BEAD8E; }
+    .roomsPresentation p strong {
+      font-size: 2.5em; }
+
 html,
 * {
   box-sizing: border-box;

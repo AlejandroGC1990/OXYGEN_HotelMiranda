@@ -1,0 +1,19 @@
+.roomsPresentation{
+    justify-content: flex-start;
+
+    h4 {
+        margin-bottom: 1em;
+    }
+
+    h3 {
+        font-size: 2.4em;
+    }
+
+    p {
+        color: $color_softyBrown;
+
+        strong {
+            font-size: 2.5em;
+        }
+    }
+}

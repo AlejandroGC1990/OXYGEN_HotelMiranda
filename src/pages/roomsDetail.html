@@ -77,22 +77,35 @@
         </div>
       </header>
 
-      <section class="roomsPage">
+      <section class="roomsPresentation">
         <h4>DOUBLE BED</h4>
         <h3>Luxury Double Bed</h3>
+        <p><strong>$345</strong>/Night</p>
         <img src="../assets/img_slider.png" />
         <form>
           <h4>Check Availability</h4>
-          <p>Check In</p>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Name" required/>
+          
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email" required/>
+          
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Phone" required/>
+          
+          <label for="message">Message (Special request)</label>
+          <textarea id="message" placeholder="Your message..."></textarea>
+          
+          <label for="checkin">Check In</label>
           <div>
-            <p id="currentDate">. . .</p>
             <img src="../assets/icon_calendar.png"/>
           </div>
-          <p>Check Out</p>
+          <label for="checkout">Check Out</label>
           <div>
-            <p id="futureDate">. . .</p>
+            <input type="number" id="futureDate" placeholder=". . ." />
             <img src="../assets/icon_calendar.png"/>
           </div>
+          <button>CHECK AVAILABLILITY</button>
         </form>
       </section>
 
