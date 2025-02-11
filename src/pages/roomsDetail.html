@@ -85,26 +85,41 @@
         <form>
           <h4>Check Availability</h4>
           <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Name" required/>
-          
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Name"
+            required
+          />
+
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email" required/>
-          
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
           <label for="phone">Phone</label>
-          <input type="text" id="phone" name="phone" placeholder="Phone" required/>
-          
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+            required
+          />
+
           <label for="message">Message (Special request)</label>
           <textarea id="message" placeholder="Your message..."></textarea>
-          
+
           <label for="checkin">Check In</label>
-          <div>
-            <img src="../assets/icon_calendar.png"/>
-          </div>
+          <input type="number" id="currentDate" placeholder=". . ." />
+
           <label for="checkout">Check Out</label>
-          <div>
-            <input type="number" id="futureDate" placeholder=". . ." />
-            <img src="../assets/icon_calendar.png"/>
-          </div>
+          <input type="number" id="futureDate" placeholder=". . ." />
+
           <button>CHECK AVAILABLILITY</button>
         </form>
       </section>
