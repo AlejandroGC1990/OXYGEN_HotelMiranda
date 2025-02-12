@@ -763,6 +763,27 @@
   .roomsPresentation p {
     padding: 0 0.5em; }
 
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3em 0 1em; }
+  .amenities__pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 30%; }
+    .amenities__pack img {
+      margin-bottom: 0.5em; }
+    .amenities__pack p {
+      color: #222222;
+      font-size: 0.9em;
+      font-weight: 700;
+      letter-spacing: 0px;
+      line-height: 1.2em;
+      text-align: center; }
+
 html,
 * {
   box-sizing: border-box;

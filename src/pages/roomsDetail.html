@@ -95,7 +95,7 @@
 
           <label for="email">Email</label>
           <input
-            type="text"
+            type="email"
             id="email"
             name="email"
             placeholder="Email"
@@ -104,49 +104,67 @@
 
           <label for="phone">Phone</label>
           <input
-            type="text"
+            type="tel"
             id="phone"
             name="phone"
             placeholder="Phone"
             required
           />
 
-          <label for="message">Message (Special request)</label>
-          <textarea id="message" placeholder="Your message..."></textarea>
-
           <label for="checkin">Check In</label>
-          <input type="number" id="currentDate" placeholder=". . ." />
+          <input type="date" id="currentDate" placeholder=". . ." required />
 
           <label for="checkout">Check Out</label>
-          <input type="number" id="futureDate" placeholder=". . ." />
+          <input type="date" id="futureDate" placeholder=". . ." required />
+
+          <label for="message">Message (Special request)</label>
+          <textarea id="message" placeholder="Your message..."></textarea>
 
           <button>CHECK AVAILABLILITY</button>
         </form>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
       </section>
 
-      <section class="amenities"> <!-- MIRAR STYLES DE SERVICES EN HOME PAGE -->
+      <section class="amenities">
+        <!-- MIRAR STYLES DE SERVICES EN HOME PAGE -->
         <h3>Amenities</h3>
-        
+
         <div class="amenities__pack">
-          <img src="" />
+          <img src="../assets/roomDetails amenities/icon_airAconditioner.png" />
           <p>Air conditioner</p>
         </div>
         <div class="amenities__pack">
-          <img src="" />
+          <img src="../assets/roomDetails amenities/icon_breakfast.png" />
           <p>Breakfast</p>
         </div>
         <div class="amenities__pack">
-          <img src="" />
+          <img src="../assets/roomDetails amenities/icon_cleaning.png" />
           <p>Cleaning</p>
         </div>
         <div class="amenities__pack">
-          <img src="" />
+          <img src="../assets/roomDetails amenities/icon_grocery.png" />
           <p>Grocery</p>
         </div>
         <div class="amenities__pack">
-          <img src="" />
+          <img src="../assets/roomDetails amenities/icon_shopNear.png" />
           <p>Shop near</p>
         </div>
         <div class="amenities__pack">
@@ -194,12 +212,20 @@
 
         <h3>Name User</h3>
         <h4>FOUNDER, QUX CO.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </p>
       </section>
 
       <section>
         <h3>Cancellation</h3>
-        <p>Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.</p>
+        <p>
+          Phasellus volutpat neque a tellus venenatis, a euismod augue
+          facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
+          Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
+          get a full refund.
+        </p>
       </section>
 
       <section class="contactUS">
