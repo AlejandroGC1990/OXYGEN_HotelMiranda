@@ -77,23 +77,182 @@
         </div>
       </header>
 
-      <section class="roomsPage">
+      <section class="roomsPresentation">
         <h4>DOUBLE BED</h4>
         <h3>Luxury Double Bed</h3>
+        <p class="roomsPresentation__priceNight"><strong>$345</strong>/Night</p>
         <img src="../assets/img_slider.png" />
         <form>
           <h4>Check Availability</h4>
-          <p>Check In</p>
-          <div>
-            <p id="currentDate">. . .</p>
-            <img src="../assets/icon_calendar.png"/>
-          </div>
-          <p>Check Out</p>
-          <div>
-            <p id="futureDate">. . .</p>
-            <img src="../assets/icon_calendar.png"/>
-          </div>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+            required
+          />
+
+          <label for="checkin">Check In</label>
+          <input type="date" id="currentDate" placeholder=". . ." required />
+
+          <label for="checkout">Check Out</label>
+          <input type="date" id="futureDate" placeholder=". . ." required />
+
+          <label for="message">Message (Special request)</label>
+          <textarea id="message" placeholder="Your message..."></textarea>
+
+          <button>CHECK AVAILABLILITY</button>
         </form>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
+      </section>
+
+      <section class="amenities">
+        <h3>Amenities</h3>
+        <div class="amenities__container">
+          <div class="amenities__container__pack">
+            <img
+              src="../assets/roomDetails amenities/icon_airAconditioner.png"
+            />
+            <p>Air conditioner</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_wifi.png" />
+            <p>High speed WiFi</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_breakfast.png" />
+            <p>Breakfast</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_kitchen.png" />
+            <p>Kitchen</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_cleaning.png" />
+            <p>Cleaning</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_shower.png" />
+            <p>Shower</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_grocery.png" />
+            <p>Grocery</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_singleBed.png" />
+            <p>Single bed</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_shopNear.png" />
+            <p>Shop near</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_towels.png" />
+            <p>Towels</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_support.png" />
+            <p>24/7 Online Support</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_key.png" />
+            <p>Strong Locker</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_security.png" />
+            <p>Smart Security</p>
+          </div>
+          <div class="amenities__container__pack">
+            <img src="../assets/roomDetails amenities/icon_expertTeam.png" />
+            <p>Expert Team</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments">
+        <img src="" />
+        <img src="" />
+        <img src="" />
+
+        <h3>Name User</h3>
+        <h4>FOUNDER, QUX CO.</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </p>
+      </section>
+
+      <section>
+        <h3>Cancellation</h3>
+        <p>
+          Phasellus volutpat neque a tellus venenatis, a euismod augue
+          facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
+          Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
+          get a full refund.
+        </p>
+      </section>
+      
+      <section>
+        <h3>Rerlated Rooms</h3>
+        <div class="swiper swiperRooms">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./src/assets/button_arrow_left.png" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="./src/assets/button_arrow_right.png" />
+          </div>
+        </div>
+        <div class="rooms__article">
+          <h3>Minimal Duplex Room</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <img src="./src/assets/price_night.png" alt="Night price" />
+        </div>
       </section>
 
       <section class="contactUS">
@@ -201,5 +360,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../scripts/components/form/form_getDate.js"></script>
     <script src="../scripts/home/slicerSwiperArrowRooms.js"></script>
+    <script src="./src/scripts/sliceSwiper/slicerSwiperArrowMenu.js"></script>
   </body>
 </html>

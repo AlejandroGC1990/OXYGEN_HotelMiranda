@@ -706,6 +706,87 @@
       .roomsPage__article__priceAndBooking__booking {
         color: #C2C2C2; }
 
+.roomsPresentation {
+  justify-content: flex-start; }
+  .roomsPresentation h4 {
+    margin-bottom: 1em; }
+  .roomsPresentation h3 {
+    font-size: 2.4em; }
+  .roomsPresentation__priceNight {
+    color: #BEAD8E; }
+    .roomsPresentation__priceNight strong {
+      font-size: 2.5em; }
+  .roomsPresentation form {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0 1em;
+    padding: 0 1.25em; }
+    .roomsPresentation form h4 {
+      color: #222222;
+      font-weight: 700;
+      font-size: 1.2em;
+      letter-spacing: -0.54px;
+      margin: 0 auto 1em; }
+    .roomsPresentation form label {
+      font-family: "Archivo", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      font-family: Archivo;
+      font-weight: 700;
+      font-size: 0.9em;
+      line-height: 1em;
+      letter-spacing: 0px;
+      margin: 1em 0; }
+    .roomsPresentation form input {
+      background-color: #F8F8F8;
+      border: none;
+      outline: none;
+      height: 4.5em;
+      padding: 0 2em; }
+    .roomsPresentation form input[type="number"] {
+      background-image: url("../assets/icon_calendar.png");
+      background-repeat: no-repeat;
+      background-position: right 1em center;
+      background-size: 1.5em;
+      cursor: pointer; }
+    .roomsPresentation form textarea {
+      background-color: #F8F8F8;
+      border: none;
+      outline: none;
+      height: 8em;
+      padding: 1em 2em; }
+    .roomsPresentation form button {
+      margin: 2em auto;
+      width: 23em; }
+  .roomsPresentation p {
+    padding: 0 0.5em; }
+
+.amenities__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin: 1.75em 0 1em; }
+  .amenities__container__pack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: auto; }
+    .amenities__container__pack img {
+      margin-bottom: 0.5em;
+      width: 1em;
+      height: 1em; }
+    .amenities__container__pack p {
+      color: #777777;
+      font-size: 0.9em;
+      font-weight: 700;
+      letter-spacing: 0px;
+      line-height: 1.2em;
+      margin: auto 0.25em; }
+
 html,
 * {
   box-sizing: border-box;

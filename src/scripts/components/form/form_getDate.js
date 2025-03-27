@@ -34,7 +34,7 @@ function getFutureDateTime(daysToAdd) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('currentDate').textContent = getCurrentDateTime();
+    document.getElementById('currentDate').placeholder = getCurrentDateTime();
 
-    document.getElementById('futureDate').textContent = getFutureDateTime(3);
+    document.getElementById('futureDate').placeholder = getFutureDateTime(3);
 });
